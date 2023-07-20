@@ -136,7 +136,7 @@ align-items: center;
   position: absolute;
   top: 90vh;
   left: 10vh;
-  height: 30vh;
+  height: 90vh;
   width: .2vh;
   background-color: var(--white);
 }
@@ -220,6 +220,50 @@ nav {
   to {
     transform: translateY(0);
   }
+}
+.myDescription{
+  width: 60vh;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vh;
+  margin-top: 30vh;
+  margin-left: 35vh;
+  color: var(--white);
+  user-select: none;
+  animation: slide-right .6s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.descLine1{
+  position: absolute;
+  margin-top: 25vh;
+  left: 31vh;
+  height: 22vh;
+  width: .2vh;
+  background-color: var(--white);
+}
+.descLine2{
+  position: absolute;
+  margin-top: 47vh;
+  left: 31vh;
+  height: .2vh;
+  width: 30vh;
+  background-color: var(--white);
+}
+.langLine{
+  position: absolute;
+  top: 6.5vh;
+  right: 2vh;
+  height: .2vh;
+  width: 5vh;
+  background-color: var(--white);
 }
 .language {
   float: right;
@@ -687,13 +731,36 @@ transition: all 1s ease;
 
 
 
-
-
-
 @media screen and (max-width: 1500px){
 
 .skills{
   height: 100vw;
+}
+
+.name{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7vh;
+  margin-top: 10vh;
+  margin-left: 25vh;
+  color: var(--white);
+  user-select: none;
+  animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+
+.myDescription{
+  width: 60vh;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vh;
+  margin-top: 25vh;
+  margin-left: 30vh;
+  color: var(--white);
+  user-select: none;
+  animation: slide-right .6s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+.langLine{
+  display: none;
 }
   .socialLine1{
     display: none;
