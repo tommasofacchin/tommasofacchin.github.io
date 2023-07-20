@@ -1,3 +1,4 @@
+
 :root {
   --black: #2A3133; 
   --light: #606364; 
@@ -5,7 +6,14 @@
   --title  : 'Montserrat', sans-serif;
 }
 
-
+#pallina {
+  position: absolute;
+  width: 200vh;
+  height: 200vh;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(65, 73, 77, 0.5) 0%, rgba(65, 73, 77, 0) 70%);
+    z-index: 0;
+}
 body{
 background-color: var(--black);
 margin: 0;
@@ -189,6 +197,7 @@ align-items: center;
   }
 }
 nav { 
+  z-index: 1;
   height: 15vh;
 }
 .logo{
@@ -196,6 +205,7 @@ nav {
   margin-top: 4vh;
   margin-left: 7vh;
   user-select: none;
+  z-index: 10;
 }
 .logo a{
   color: var(--white);
@@ -211,6 +221,7 @@ nav {
   margin-left: 30vh;
   color: var(--white);
   user-select: none;
+  z-index: 2;
   animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
 }
 @keyframes slide-in {
@@ -229,6 +240,7 @@ nav {
   margin-top: 30vh;
   margin-left: 35vh;
   color: var(--white);
+  z-index: 2;
   user-select: none;
   animation: slide-right .6s cubic-bezier(.4, 0, .2, 1) forwards;
 }
@@ -286,6 +298,7 @@ nav {
   position: relative;
   transition: 0.2s;
   caret-color: transparent;
+  z-index: 10;
 }
 .button::before{
   position: absolute;

@@ -76,6 +76,28 @@ languageToggleBtn.addEventListener("click", () => {
 
 
 
+
+
+var pallina = document.getElementById('pallina');
+var delay = 200; // tempo di ritardo in millisecondi
+
+document.addEventListener('mousemove', function(event) {
+  setTimeout(function() {
+    var x = event.clientX - (pallina.offsetWidth / 2);
+    var y = event.clientY - (pallina.offsetHeight / 2);
+    pallina.style.left = x + 'px';
+    pallina.style.top = y + 'px';
+  }, delay);
+});
+
+
+
+
+
+
+
+
+
 // Seleziona l'elemento della linea
 var socialLine = document.querySelector('.socialLine1');
 

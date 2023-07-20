@@ -1,3 +1,6 @@
+
+
+
 @media (max-width: 1200px){
 
     
@@ -535,6 +538,12 @@
 
 @media (max-width: 420px){
 
+  *hover{
+    color: none;
+    background-color: initial;
+    text-decoration: none;
+    size: initial;
+  }
 
   .school{
     height: 330vw;

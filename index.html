@@ -41,7 +41,7 @@
     <div class="socialLine3"></div>
     <div class="socialLine4"></div>
 
-
+    <div id="pallina"></div>
     <section class="home">
       <div class="socials">
         <div class="social"><a href="https://www.instagram.com/tommasofacchin.fs" target="_blank"><i class="fab fa-instagram"></i></a></i></div>
@@ -163,16 +163,18 @@
           </div>
         </div>
         <div class="contactRight">
-          <form>
+          <form action="form.php" method="post">
             <h1 id="idContact2"> Contact me</h1>
-            <input type="text" class="input-field" placeholder="Name">
-            <input type="email" class="input-field" placeholder="Email">
-            <textarea type="text" class="area-field" placeholder="Message"></textarea>
-            <button type="button" class="btn"><i class="fa-regular fa-paper-plane"></i></button>
-          </form>
+            <input type="text" class="input-field" name="name" placeholder="Name">
+            <input type="email" class="input-field" name="email" placeholder="Email">
+            <textarea type="text" class="area-field" name="message" placeholder="Message"></textarea>
+            <button type="submit" class="btn"><i class="fa-regular fa-paper-plane"></i></button>
+        </form>
         </div>
       </div>
     </section>
+      
+
 
 
 </div>
