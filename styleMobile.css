@@ -1,21 +1,9 @@
-@media screen and (max-width: 1200px){
+@media (max-width: 1200px){
 
     
-  .socialLine1{
-    display: none;
-  }
-  .socialLine2{
-    display: none;
-  }
-  .socialLine3{
-    display: none;
-  }
-  .socialLine4{
-    display: none;
-}
+
 .school{
     background-color: var(--light);
-    height: 170vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -54,16 +42,6 @@
     margin-top: 3vh;
     margin-left: 5vh;
     user-select: none;
-}
-.name{
-    position: absolute;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10vw;
-    margin-top: 10vw;
-    margin-left: 15vh;
-    color: var(--white);
-    user-select: none;
-    animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
 }
 
 
@@ -177,13 +155,13 @@
     }
     .center h2{
       font-family: var(--title);
-      font-size: 3.9vw;
+      font-size: 5vw;
       line-height: .1;
       margin-top: 5vh;
     }
     .center p{
       font-family: work sans;
-      font-size: 3vw;
+      font-size: 4vw;
     }
   
 
@@ -368,50 +346,39 @@
       }
 
 }
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 1400px){
 
     .skills{
       height: 100vw;
     }
-      .socialLine1{
-        display: none;
-      }
-      .socialLine2{
-        display: none;
-      }
-      .socialLine3{
-        display: none;
-      }
-      .socialLine4{
-        display: none;
+    
+
+    
+
+    .name{
+      position: absolute;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 5vw;
+      margin-top: 3vw;
+      margin-left: 13vw;
+      color: var(--white);
+      user-select: none;
+      animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
     }
     
+    .myDescription{
+      width: 40vw;
+      position: absolute;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2vw;
+      margin-top: 10vw;
+      margin-left: 15vw;
+      color: var(--white);
+      user-select: none;
+      animation: slide-right .6s cubic-bezier(.4, 0, .2, 1) forwards;
+    }
+
       .headerTitle h1{
         font-size: 8vw;
         text-align: center;
@@ -486,8 +453,8 @@
     
     
     
-    .schools{
-    width: 100%;
+    .school{
+      height: 170vw;
     }
     .center{
       margin-top: 30vw;
@@ -509,13 +476,13 @@
       }
       .center h2{
         font-family: var(--title);
-        font-size: 2vw;
+        font-size: 3.9vw;
         line-height: .1;
         margin-bottom: 5vh;
       }
       .center p{
-        font-family: var(--title);
-        font-size: 1.5vw;
+        font-family: work sans;
+        font-size: 3vw;
       }
     
       
@@ -523,4 +490,418 @@
       width: 80%;
     }
     
+}
+
+
+
+@media (max-width: 1000px){
+  
+  .school{
+    height: 200vw;
+  }
+}
+
+
+@media (max-width: 700px){
+  
+  .school{
+    height: 230vw;
+  }
+}
+
+
+
+@media (max-width: 600px){
+  
+  .school{
+    height: 270vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 420px){
+
+
+  .school{
+    height: 330vw;
+    background-color: var(--light);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .skills{
+    height: 230vw;
+    background-color: var(--black);
     }
+  .contactMe{
+    height: 100vh;
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/back.jpg');
+    background-size: cover;
+  }
+
+.language {
+      display: none;
+    }
+.socials{
+    height: 80vh;
+    width: 5vh;
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+  
+.logo a{
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 1vh;
+    user-select: none;
+    font-size: 5vh;
+}
+
+
+.name{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8vw;
+  margin-top: 10vw;
+  margin-left: 5vw;
+  color: var(--white);
+  user-select: none;
+  animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+
+.myDescription{
+  width: 67vw;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4vw;
+  margin-top: 27vw;
+  margin-left: 10vw;
+  color: var(--white);
+  user-select: none;
+  animation: slide-right .6s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+
+  .headerTitle h1{
+    font-size: 13vw;
+    text-align: center;
+    font-family: var(--title);
+    color: var(--white);
+    user-select: none;
+    cursor: default;
+  }
+
+  .work{
+  background-color: var(--black);
+  height: 550vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  }
+  .job{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 125vw;
+    width: 100%;
+    margin-top: 15vh;
+  }
+  
+  .left{
+    background-color: black;
+    height: 45vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border-radius: 30px 0 0 0;
+  }
+  .bottom{
+    top: 1vh;
+    left: 1vh;
+    position: relative;
+    height: 45vw;
+    width: 80vw;
+    z-index: 0;
+    border: 1px solid white;
+    border-radius: 60px 0 0 0;
+  }
+  
+  .right{
+  margin-top: 5vh;
+  height: auto;
+  width: 80vw;
+  user-select: none;
+  cursor: default;
+  color: var(--white);
+  }
+  .right h1{
+  font-family: var(--title);
+  font-size: 10vw;
+  }
+  .right span.date{
+    font-family: work sans;
+    font-size: 1.5vh;
+    line-height: .1;
+    color: var(--white)
+  }
+  .right h2{
+    font-family: var(--title);
+    font-size: 5vw;
+    line-height: .1;
+    margin-top: 5vh;
+  }
+  .right p{
+    font-family: work sans;
+    font-size: 3vw;
+  }
+  
+  
+  
+  .schools{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vw;
+    width: 100%;
+    margin-top: 20vh;
+  }
+  .center{
+    height: auto;
+    width: 80vw;
+    user-select: none;
+    cursor: default;
+    color: var(--white);
+    }
+    .center h1{
+    font-family: var(--title);
+    font-size: 8vw;
+    }
+    .center span.date{
+      font-family: work sans;
+      color: var(--white);
+      font-size: 1.5vh;
+      line-height: .1;
+    }
+    .center h2{
+      font-family: var(--title);
+      font-size: 3.9vw;
+      line-height: .1;
+      margin-top: 5vh;
+    }
+    .center p{
+      font-family: work sans;
+      font-size: 4vw;
+    }
+  
+
+
+    .contactDiv{
+
+        width: 90vw;
+        height: 140vw;
+        background-color: var(--black);
+        box-shadow: 2vh 2vh 30px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contactLeft{
+        width: 80%;
+        height: 40%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .contactInfo {
+        width: 100%;
+        height: 30%;
+        align-self: flex-start;
+        text-align: center;
+      }
+      .contactLeft h2 {
+        margin-bottom: 10%;
+        font-size: 6vw;
+        color: var(--white);
+        font-family: var(--title);
+        user-select: none;
+      }
+      .contactLeft h3 {
+        margin-top: 5%;
+        font-size: 3vw;
+        color: var(--white);
+        font-family: work sans;
+        user-select: none;
+      }
+      
+      .contactLeft p {
+        margin: 0;
+        font-size: 2vw;
+        color: var(--white);
+        font-family: work sans;
+        text-decoration: none;
+      }
+      
+      .contactLeft p a {
+        transition: all .5s;
+        color: var(--light);
+        text-decoration: none;
+      }
+      .contactLeft p a:hover {
+        color: var(--white);
+      }
+      
+      
+      .socialsContact{
+        margin-left: 0vh;
+        margin-top: 50%;
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+      }
+      .socialContact{
+        margin-right: 1vw;
+        margin-left: 1vw;
+        text-align: center;
+        width: 5vh;
+        height: 5vh;
+        color: var(--white);
+        align-self: flex-end;
+      }
+      .socialContact i{
+        font-size: 3vw;
+      }
+      .socialContact a:hover{
+        color: var(--black);
+      }
+      .socialContact a{
+        position: relative;
+        color: var(--white);
+        transition: .4s;
+        z-index: 1;
+      }
+      .socialContact a:before {
+        content: "";
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        background-color: var(--white);
+        opacity: 0;
+        transition: opacity .4s, transform .4s;
+        z-index: -1;
+      }
+      
+      .socialContact a:hover:before {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+      
+      .contactRight{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 45%;
+        background-color: var(--black);
+        box-shadow: 2vh 2vh 30px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+      .contactRight h1{
+        margin-left: 0%;
+        text-align: center;
+        font-size: 6vw;
+        color: var(--white);
+        font-family: var(--title);
+        user-select: none;
+      }
+      .input-field{
+        width: 80%;
+        height: 6vw;
+        margin-top: 1vw;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: var(--black);
+        outline: none;
+        border: none;
+        border-bottom: .5px solid white;
+        font-family: work sans;
+        font-size: 2vw;
+        color: var(--white);
+      }
+      .area-field{
+        width: 80%;
+        height: 5vw;
+        margin-top: 1vw;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: var(--black);
+        outline: none;
+        border: none;
+        resize: none;
+        border-bottom: .5px solid white;
+        font-family: work sans;
+        font-size: 2vw;
+        color: var(--white);
+      }
+      .btn{
+        height: 7vw;
+        width: 7vw;
+        margin-left: 70%;
+        margin-top: 3vw;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+        font-size: 2vh;
+        color: var(--white);
+        background-color: var(--black);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+      }
+      .btn:hover {
+        transform: scale(1.2);
+        background-color: var(--white);
+        color: var(--black);
+      }
+
+}
