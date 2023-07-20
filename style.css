@@ -1,9 +1,8 @@
-
 :root {
   --black: #2A3133; 
   --light: #606364; 
   --white: #FFFFFF;
-  --title  : "archivo black";
+  --title  : 'Montserrat', sans-serif;
 }
 
 
@@ -11,9 +10,12 @@ body{
 background-color: var(--black);
 margin: 0;
 }
-
+.homePage{
+  height: 100vh;
+  background: url('images/back2.jpg');
+  background-size: cover;
+}
 .home{
-background-color: var(--black);
 height: 85vh;
 width: 100%;
 display: flex;
@@ -186,11 +188,39 @@ align-items: center;
     width: 15vw;
   }
 }
-nav {
-  background-color: var(--black);
+nav { 
   height: 15vh;
 }
-
+.logo{
+  position: absolute;
+  margin-top: 4vh;
+  margin-left: 7vh;
+  user-select: none;
+}
+.logo a{
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7vh;
+  text-decoration: none;
+}
+.name{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7vh;
+  margin-top: 15vh;
+  margin-left: 30vh;
+  color: var(--white);
+  user-select: none;
+  animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .language {
   float: right;
   margin-top: 5vh;
@@ -271,7 +301,7 @@ nav {
 .headerTitle h1{
   font-size: 10vh;
   text-align: center;
-  font-family: archivo black;
+  font-family: var(--title);
   color: var(--white);
   user-select: none;
   cursor: default;
@@ -298,8 +328,8 @@ nav {
   float: left;
   border-radius: 60px 0 0 0;
 }
-.left #id2M{
-  background-image: url('');
+#id2M{
+  background-image: url('images/2m.png');
 }
 #idGate{
   background-image: url('images/infiniteArea.jpg');
@@ -403,7 +433,7 @@ line-height: .1;
 .skillbar{
   background-color: black;
   display: block;
-  height: 1vh;
+  height: .5vh;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   overflow: hidden;
@@ -656,27 +686,15 @@ transition: all 1s ease;
 
 
 
+
+
+
+
 @media screen and (max-width: 1500px){
-  
-.left{
-  background-color: black;
-  height: 45vh;
-  width: 80vh;
-  margin-right: 10vh;
-  background-size: cover;
-  background-position: center center;
-  border-radius: 25px;
+
+.skills{
+  height: 100vw;
 }
-
-
-}
-
-
-
-
-@media screen and (max-width: 1400px){
-
-
   .socialLine1{
     display: none;
   }
@@ -686,51 +704,81 @@ transition: all 1s ease;
   .socialLine3{
     display: none;
   }
+  .socialLine4{
+    display: none;
+}
 
   .headerTitle h1{
-    font-size: 8vh;
+    font-size: 8vw;
     text-align: center;
     font-family: var(--title);
     user-select: none;
     cursor: default;
+  }
+  .work{
+    height: 350vw;
   }
   .job{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75vh;
+    height: 100vw;
     width: 100%;
     margin-top: 10vh;
   }
 
 
-  .left{
-    height: 45%;
-    margin-right: 10vh;
-  }
 
+  .left{
+    background-color: black;
+    height: 36vw;
+    width: 64vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border-radius: 60px 0 0 0;
+  }
+  .bottom{
+    height: 36vw;
+    width: 64vw;
+    position: relative;
+    z-index: 0;
+    border: 2px solid white;
+    border-radius: 60px 0 0 0;
+  }
   .right{
-  height: 54vh;
-  width: 75%;
-  user-select: none;
-  cursor: default;
-  }
-  .right h1{
-  font-family: var(--title);
-  font-size: 8vh;
-  line-height: .1;
-  }
-  .right span.date{
+    margin-top: 5vw;
+    height: 50vw;
+    width: 80vw;
+    user-select: none;
+    cursor: default;
+    color: var(--white);
+    }
+    .right h1{
     font-family: var(--title);
-    font-size: 1.5vh;
-    color: black;
-    line-height: .1;
-  }
-  .right p{
-    font-family: var(--title);
-    font-size: 2.5vh;
-  }
+    font-size: 8vw;
+    }
+    .right span.date{
+      font-family: work sans;
+      font-size: 2vw;
+      line-height: .1;
+      color: var(--white)
+    }
+    .right h2{
+      font-family: var(--title);
+      font-size: 4vw;
+      line-height: .1;
+      margin-top: 5vh;
+    }
+    .right p{
+      font-family: work sans;
+      font-size: 2vw;
+    }
 
 
 
@@ -738,31 +786,32 @@ transition: all 1s ease;
 width: 100%;
 }
 .center{
-  height: 54vh;
-  width: 75%;
+  margin-top: 30vw;
+  height: 54vw;
+  width: 80%;
   user-select: none;
   cursor: default;
   }
   .center h1{
     font-family: var(--title);
-  font-size: 8vh;
+  font-size: 6vw;
   line-height: .1;
   }
   .center span.date{
     font-family: var(--title);
-    font-size: 2vh;
-    color: black;
+    font-size: 1vw;
+    color: var(--white);
     line-height: .1;
   }
   .center h2{
     font-family: var(--title);
-    font-size: 3vh;
+    font-size: 2vw;
     line-height: .1;
     margin-bottom: 5vh;
   }
   .center p{
     font-family: var(--title);
-    font-size: 2.5vh;
+    font-size: 1.5vw;
   }
 
   
@@ -771,14 +820,6 @@ width: 100%;
 }
 
 }
-
-
-@media screen and (max-width: 1200px){
-  .language {
-    display: none;
-  }
-}
-
 
 
 
