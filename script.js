@@ -16,6 +16,7 @@ const desc4 = document.getElementById("desc4");
 const desc5 = document.getElementById("desc5");
 const contact1 = document.getElementById("idContact1");
 const contact2 = document.getElementById("idContact2");
+const myDescription = document.getElementById("myDescription");
 
 const languageToggleBtn = document.getElementById("language-toggle");
 
@@ -45,6 +46,7 @@ languageToggleBtn.addEventListener("click", () => {
     desc5.textContent = "two-week school internship in which i organized personalized tablets and installated custom applications for couriers.";
     contact1.textContent = "CONTACTS";
     contact2.textContent = "CONTACT ME";
+    myDescription.textContent = "I am a software developer with a deep passion for computer science and eager to explore its many fascinating aspects.";
   } else {
     
     document.getElementById("imgIT").classList.toggle("show");
@@ -67,6 +69,7 @@ languageToggleBtn.addEventListener("click", () => {
     desc5.textContent = "Stage scolatico in azienda di 2 settimane in cui ho lavorato nella preparazione di tablet personalizzati e installazione di applicazioni per corrieri.";
     contact1.textContent = "CONTATTI";
     contact2.textContent = "CONTATTAMI";
+    myDescription.textContent = "Sono uno sviluppatore con una forte passione per l'informatica e una grande voglia di esplorare questo mondo.";
   }
 });
 
@@ -201,8 +204,8 @@ window.addEventListener('load', function() {
 
       document.getElementById("imgIT").classList.toggle("show");
 
-
       
+
       setTimeout(function(){
         var socialIcons = document.querySelectorAll('.social');
         for (var i = 0; i < socialIcons.length; i++) {
@@ -226,6 +229,7 @@ window.addEventListener('load', function() {
     desc5.textContent = "two-week school internship in which i organized personalized tablets and installated custom applications for couriers.";
     contact1.textContent = "CONTACTS";
     contact2.textContent = "CONTACT ME";
+    myDescription.textContent = "I am a software developer with a deep passion for computer science and eager to explore its many fascinating aspects.";
 }, 100);
 
 
