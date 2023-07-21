@@ -18,6 +18,91 @@ html, body {
   background: radial-gradient(circle at center, rgba(65, 73, 77, 0.5) 0%, rgba(65, 73, 77, 0) 70%);
     z-index: 0;
 }
+.heartContainer {
+  position: fixed;
+  left: 3vh;
+  height: 100vh;
+  width: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart {
+  margin-top: 1vh;
+  position: relative;
+  height: 3vh;
+  width: 3vh;
+  background-size: cover;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.heart:hover{
+  transform: scale(1.5);
+}
+.heartFilled1{
+  position: relative;
+height: 3vh;
+width: 3vh;
+  background: url('images/h1.png');
+  background-size: cover;
+  opacity: 0;
+  transform: scale(0);
+  transition: all .7s ease;
+}
+.heartFilled2{
+  position: relative;
+height: 3vh;
+width: 3vh;
+  background: url('images/h1.png');
+  background-size: cover;
+  opacity: 0;
+  transform: scale(0);
+  transition: all .7s ease;
+}
+.heartFilled3{
+  position: relative;
+height: 3vh;
+width: 3vh;
+  background: url('images/h1.png');
+  background-size: cover;
+  opacity: 0;
+  transform: scale(0);
+  transition: all .7s ease;
+}
+.heartFilled4{
+  position: relative;
+height: 3vh;
+width: 3vh;
+  background: url('images/h1.png');
+  background-size: cover;
+  opacity: 0;
+  transform: scale(0);
+  transition: all .7s ease;
+}
+
+.heartFilled1.active{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.heartFilled2.active{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.heartFilled3.active{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.heartFilled4.active{
+  opacity: 1;
+  transform: scale(1);
+}
+
+
 body{
 background-color: var(--black);
 margin: 0;

@@ -1,3 +1,4 @@
+
 const title = document.getElementById("title");
 const date1 = document.getElementById("date1");
 const date2 = document.getElementById("date2");
@@ -166,6 +167,87 @@ window.addEventListener('scroll', function() {
 
 
 
+//home -> 100
+//school -> 180
+//work -> 275
+//skill -> 120
+//contact -> 100
+
+// 50   230   505   625
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+
+
+  var heart1 = document.querySelector('.heartFilled1');
+  var heart2 = document.querySelector('.heartFilled2');
+  var heart3 = document.querySelector('.heartFilled3');
+  var heart4 = document.querySelector('.heartFilled4');
+
+  if(scrollPosition > window.innerHeight * 0.7){
+    heart1.classList.add('active'); 
+  }
+  else{
+    heart1.classList.remove('active'); 
+  }
+
+  if(scrollPosition > window.innerHeight * 2.5){
+    heart2.classList.add('active'); 
+  }
+  else{
+    heart2.classList.remove('active'); 
+  }
+
+  if(scrollPosition > window.innerHeight * 5.2){
+    heart3.classList.add('active'); 
+  }
+  else{
+    heart3.classList.remove('active'); 
+  }
+
+  if(scrollPosition > window.innerHeight * 6.4){
+    heart4.classList.add('active'); 
+  }
+  else{
+    heart4.classList.remove('active'); 
+  }
+
+
+});
+
+
+// 100   280   555   675
+const h1 = document.querySelector('#h1');
+const h2 = document.querySelector('#h2');
+const h3 = document.querySelector('#h3');
+const h4 = document.querySelector('#h4');
+
+h1.addEventListener('click', () => {
+  window.scrollTo({
+    top: window.innerHeight,
+    behavior: 'smooth'
+  });
+});
+h2.addEventListener('click', () => {
+  window.scrollTo({
+    top: window.innerHeight *2.8,
+    behavior: 'smooth'
+  });
+});
+h3.addEventListener('click', () => {
+  window.scrollTo({
+    top: window.innerHeight *5.6,
+    behavior: 'smooth'
+  });
+});
+h4.addEventListener('click', () => {
+  window.scrollTo({
+    top: window.innerHeight *6.75,
+    behavior: 'smooth'
+  });
+});
+
+
 
 
 window.addEventListener('scroll', function() {
@@ -179,8 +261,6 @@ window.addEventListener('scroll', function() {
   social.style.opacity = opacita;
   socialLine.style.opacity = opacita;
 });
-
-
 
 window.addEventListener('scroll', reveal);
 

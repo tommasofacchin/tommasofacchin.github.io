@@ -1,3 +1,6 @@
+
+
+
 @media (max-width: 1200px){
 
     
@@ -495,6 +498,9 @@
 
 @media screen and (max-width: 1500px){
 
+  .heartContainer{
+    display: none;
+  }
   .skills{
     height: 100vw;
   }
