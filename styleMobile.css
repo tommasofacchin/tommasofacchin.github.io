@@ -454,7 +454,7 @@
     
     
     .school{
-      height: 170vw;
+      height: 130vw;
     }
     .center{
       margin-top: 30vw;
@@ -612,6 +612,7 @@
   
   
   .schools{
+  height: 40vh;
   width: 100%;
   }
   .center{
@@ -721,7 +722,7 @@
 }
 
   .contactMe{
-    height: 100vh;
+    height: 130vh;
     background-color: var(--light);
     display: flex;
     align-items: center;
@@ -895,10 +896,9 @@
       font-size: 4vw;
     }
   
-.contactMe{
-    heigth: 130vh;
-}
-.contactDiv{
+
+  
+    .contactDiv{
 
         width: 90vw;
         height: 90vh;
@@ -1015,7 +1015,7 @@
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 40%;
+        height: 45%;
         background-color: var(--black);
         box-shadow: 2vh 2vh 30px 20px rgba(0, 0, 0, 0.3);
         text-align: center;
@@ -1060,7 +1060,7 @@
       .btn{
         height: 7vw;
         width: 7vw;
-        margin-left: 65%;
+        margin-left: 70%;
         margin-top: 5vw;
         border-radius: 100px;
         outline: none;
@@ -1077,7 +1077,10 @@
         background-color: var(--white);
         color: var(--black);
       }
-
+      .btn i{
+        text-align: center;
+        overflow: visible;
+      }
       .reveal{
         transform: translateY(50px);
         opacity: 0;
