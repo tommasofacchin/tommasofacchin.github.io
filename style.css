@@ -1,4 +1,7 @@
-
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+}
 :root {
   --black: #2A3133; 
   --light: #606364; 
