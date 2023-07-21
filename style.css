@@ -1,11 +1,12 @@
 html, body {
    max-width: 100vw;
    overflow-x: hidden;
+   -webkit-overflow-scrolling: touch;
 }
 :root {
   --black: #2A3133; 
   --light: #606364; 
-  --white: #FFFFFF;
+  --white: #bcbcbc;
   --title  : 'Montserrat', sans-serif;
 }
 
@@ -35,7 +36,7 @@ flex-direction: row;
 
 .school{
   background-color: var(--light);
-  height: 220vh;
+  height: 180vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -43,7 +44,7 @@ flex-direction: row;
 }
 .work{
 background-color: var(--black);
-height: 350vh;
+height: 275vh;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -59,7 +60,7 @@ align-items: center;
   align-items: center; 
 }
 .skills{
-  height: 200vh;
+  height: 120vh;
   background-color: var(--black);
   }
 .contactMe{
@@ -145,9 +146,8 @@ align-items: center;
 }
 .socialLine1{
   position: absolute;
-  top: 90vh;
+  top: 100vh;
   left: 10vh;
-  height: 90vh;
   width: .2vh;
   background-color: var(--white);
 }
@@ -161,7 +161,7 @@ align-items: center;
 }
 .socialLine2{
   position: absolute;
-  top: 170vh;
+  top: 160vh;
   left: 10vh;
   height: .3vh;
   width: 0vw;
@@ -181,7 +181,7 @@ align-items: center;
 }
 .socialLine4{
   position: absolute;
-  top: 235vh;
+  top: 210vh;
   left: 10vh;
   height: .3vh;
   width: 0vw;
@@ -215,6 +215,10 @@ nav {
   font-family: 'Montserrat', sans-serif;
   font-size: 7vh;
   text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+.logo a:hover{
+  color: #FFFFFF;
 }
 .name{
   position: absolute;
@@ -371,15 +375,15 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 50vh;
   width: 100%;
   margin-top: 15vh;
 }
 
 .left{
   background-color: black;
-  height: 54vh;
-  width: 96vh;
+  height: 45vh;
+  width: 80vh;
   margin-right: 10vh;
   background-size: cover;
   background-position: center center;
@@ -387,6 +391,26 @@ nav {
   z-index: 1;
   float: left;
   border-radius: 60px 0 0 0;
+  transition: all .2s ease-in-out;
+  transform-style: preserve-3d;
+}
+.bottom{
+  top: 2vh;
+  left: 2vh;
+  position: relative;
+  height: 45vh;
+  width: 80vh;
+  transform: translateZ(-10px);
+  border: 2px solid var(--white);
+  border-radius: 60px 0 0 0;
+  transition: all .2s ease-in-out;
+}
+.left:hover {
+  transform: translate(-1%, -1%);
+}
+.left:hover ~ .bottom {
+  transform: translate(1%, 1%);
+  background-color: var(--white);
 }
 #id2M{
   background-image: url('images/2m.png');
@@ -397,17 +421,6 @@ nav {
 #idForno{
   background-image: url('images/fornoAsolo.jpg');
 }
-.bottom{
-  top: 3vh;
-  left: 3vh;
-  position: relative;
-  height: 54vh;
-  width: 96vh;
-  z-index: 0;
-  border: 2px solid white;
-  border-radius: 60px 0 0 0;
-}
-
 .right{
 height: 54vh;
 width: 70vh;
@@ -443,7 +456,7 @@ line-height: .1;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 25vh;
+  height: 10vh;
   width: 100%;
   margin-top: 40vh;
 }
@@ -540,7 +553,7 @@ width: 100%;
   width: 70vw;
   height: 75vh;
   background-color: var(--black);
-  box-shadow: 2vh 2vh 30px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2vh 2vh 30px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -652,3 +665,134 @@ width: 100%;
 }
 
 .form{
+  margin: 10vh;
+}
+.contactRight h1{
+  margin-left: 10%;
+  font-size: 5vh;
+  color: var(--white);
+  font-family: var(--title);
+  user-select: none;
+}
+.input-field{
+  width: 80%;
+  height: 7vh;
+  margin-top: 2vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: var(--black);
+  outline: none;
+  border: none;
+  border-bottom: .5px solid white;
+  font-family: work sans;
+  font-size: 2vh;
+  color: var(--white);
+}
+.area-field{
+  width: 80%;
+  height: 5vh;
+  margin-top: 3vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: var(--black);
+  outline: none;
+  border: none;
+  resize: none;
+  border-bottom: .5px solid white;
+  font-family: work sans;
+  font-size: 2vh;
+  color: var(--white);
+}
+.btn{
+  height: 7vh;
+  width: 7vh;
+  margin-left: 80%;
+  margin-top: 4vh;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  font-size: 3vh;
+  color: var(--white);
+  background-color: var(--black);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.2);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.reveal{
+position: relative;
+transform: translateY(100px);
+opacity: 0;
+transition: all 1s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.revealDiv{
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.revealDiv.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+@font-face {
+  font-family: "sfran";
+  src: url("fonts/sf.woff") format('woff');
+}
+
+
+@keyframes italianSkill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes englishSkill {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes spanishSkill {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
