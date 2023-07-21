@@ -1,4 +1,3 @@
-
 const title = document.getElementById("title");
 const date1 = document.getElementById("date1");
 const date2 = document.getElementById("date2");
@@ -97,12 +96,11 @@ document.addEventListener('mousemove', function(event) {
 
 
 
-
 // Seleziona l'elemento della linea
 var socialLine = document.querySelector('.socialLine1');
 
 // Calcola l'altezza massima della linea
-var maxLineHeight = 200;
+var maxLineHeight = 180;
 
 // Calcola la posizione verticale di inizio animazione
 var startPosition = window.innerHeight - 400;
@@ -170,11 +168,17 @@ window.addEventListener('scroll', function() {
 
 
 
-
-
-
-
-
+window.addEventListener('scroll', function() {
+  var testo = document.querySelector('.name');
+  var testo2 = document.querySelector('.myDescription');
+  var social = document.querySelector('.socials');
+  var socialLine = document.querySelector('.socialLine3');
+  var opacita = 1 - window.scrollY / 600;
+  testo.style.opacity = opacita;
+  testo2.style.opacity = opacita;
+  social.style.opacity = opacita;
+  socialLine.style.opacity = opacita;
+});
 
 
 
