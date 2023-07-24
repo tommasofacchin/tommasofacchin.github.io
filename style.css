@@ -23,7 +23,7 @@ html, body {
   left: 3vh;
   height: 100vh;
   width: 3vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -145,7 +145,7 @@ align-items: center;
   align-items: center; 
 }
 .skills{
-  height: 120vh;
+  height: 190vh;
   background-color: var(--black);
   }
 .contactMe{
@@ -811,6 +811,60 @@ width: 100%;
 
 
 
+
+
+.knowHow{
+  margin-top: 40vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15vh;
+}
+.firstRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 15vh;
+  transform: translateX(9vh);
+}
+.secondRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 15vh;
+}
+.knowHow i{
+  font-size: 12vh;
+  color: var(--white);
+}
+
+.knowLine{
+  position: absolute;
+  height: .1vh;
+  width: 80vh;
+  background-color: var(--white);
+}
+
+.knowHow i:hover{
+  color: white;
+}
+
+.iconShow{
+transform: scale(0);
+opacity: 0;
+transition: all 1s;
+}
+
+.iconShow.show{
+  transform: scale(1);
+  opacity: 1;
+}
 
 
 
