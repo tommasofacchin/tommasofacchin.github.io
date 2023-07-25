@@ -121,6 +121,8 @@ flex-direction: row;
 
 .school{
   background-color: var(--light);
+  background-image: url('images/back.jpg');
+  background-repeat: repeat;
   height: 180vh;
   width: 100%;
   display: flex;
@@ -145,7 +147,7 @@ align-items: center;
   align-items: center; 
 }
 .skills{
-  height: 190vh;
+  height: 330vh;
   background-color: var(--black);
   }
 .contactMe{
@@ -868,8 +870,68 @@ transition: all 1s;
 
 
 
+.softwares{
+  margin-top: 40vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+.firstSoftwares{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8vh;
+}
 
+.secondSoftwares{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8vh;
+}
+.softwareCard{
+  width: 25vh;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light);
+  border-radius: 20px;
+  transition: all .5s ease-in-out;
+}
+.softwareCard i{
+  margin-top: 10%;
+  height: 20%;
+  font-size: 7vh;
+  color: var(--white);
+  transition: all .5s ease-in-out;
+}
+.softwareCard p{
+  user-select: none;
+  text-align: center;
+  font-family: var(--title);
+  margin-top: 20%;
+  width: 80%;
+  height: 70%;
+  font-size: 2vh;
+  overflow: hidden;
+  color: var(--white);
+  transition: all .5s ease-in-out;
+}
+.softwareCard:hover{
+  transform: scale(1.1);
+  background-color: var(--white);
+}
+.softwareCard:hover i {
+  color: var(--black);
+}
 
+.softwareCard:hover p {
+  color: var(--black);
+}
 
 
 
