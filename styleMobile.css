@@ -10,8 +10,8 @@
     align-items: center; 
   }
 
-  .skills{
-    height: 200vw;
+.skills{
+    height: 1000vw;
     background-color: var(--black);
     }
   .contactMe{
@@ -352,12 +352,44 @@
       .knowHow i{
         font-size: 6vw;
       }
+
+
+      
+    .softwares{
+      margin-top: 10vw;
+      gap: 5vw;
+    }
+    .firstSoftwares{
+      gap: 7vh;
+    }
+    
+    .secondSoftwares{
+      gap: 7vh;
+    }
+    .softwareCard{
+      width: 10vw;
+      height: 20vw;
+      background-color: var(--light);
+      border-radius: 20px;
+    }
+    .softwareCard i{
+      margin-top: 10%;
+      height: 20%;
+      font-size: 6vw;
+    }
+    .softwareCard p{
+      margin-top: 20%;
+      width: 80%;
+      height: 70%;
+      font-size: 1.5vw;
+    }
+
 }
 
 @media screen and (max-width: 1400px){
 
     .skills{
-      height: 100vw;
+      height: 120vh;
     }
     
 
@@ -497,6 +529,35 @@
       width: 80%;
     }
     
+
+    .softwares{
+      margin-top: 30vh;
+      gap: 9vh;
+    }
+    .firstSoftwares{
+      gap: 7vh;
+    }
+    
+    .secondSoftwares{
+      gap: 7vh;
+    }
+    .softwareCard{
+      width: 20vh;
+      height: 30vh;
+      background-color: var(--light);
+      border-radius: 20px;
+    }
+    .softwareCard i{
+      margin-top: 10%;
+      height: 20%;
+      font-size: 6vh;
+    }
+    .softwareCard p{
+      margin-top: 20%;
+      width: 80%;
+      height: 70%;
+      font-size: 1.5vh;
+    }
 }
 
 
@@ -506,7 +567,7 @@
     display: none;
   }
   .skills{
-    height: 130vw;
+    height: 190vw;
   }
   
   .name{
@@ -555,7 +616,7 @@
       cursor: default;
     }
     .work{
-      height: 350vw;
+      height: 330vw;
     }
     .job{
       display: flex;
@@ -660,6 +721,11 @@
     width: 80%;
   }
   
+
+
+.softwares{
+  margin-top: 30vh;
+}
 }
   
 @media (max-width: 1000px){
@@ -668,7 +734,7 @@
     height: 200vw;
   }
   .skills{
-    height: 150vw;
+    height: 250vw;
   }
   .knowHow{
     gap: 10vh;
@@ -682,6 +748,38 @@
   .knowHow i{
     font-size: 6vw;
   }
+
+
+  
+
+  .softwares{
+    margin-top: 20vh;
+    gap: 8vh;
+  }
+  .firstSoftwares{
+    gap: 5vh;
+  }
+  
+  .secondSoftwares{
+    gap: 5vh;
+  }
+  .softwareCard{
+    width: 15vh;
+    height: 20vh;
+    background-color: var(--light);
+    border-radius: 20px;
+  }
+  .softwareCard i{
+    margin-top: 10%;
+    height: 20%;
+    font-size: 5vw;
+  }
+  .softwareCard p{
+    margin-top: 20%;
+    width: 80%;
+    height: 70%;
+    font-size: 1vw;
+  }
 }
 
 
@@ -691,7 +789,7 @@
     height: 230vw;
   }
   .skills{
-    height: 180vw;
+    height: 270vw;
   }
   .knowHow{
     margin-top: 5vh;
@@ -709,25 +807,59 @@
   .knowLine{
     width: 30vw;
   }
+
+
+  
+  .softwares{
+    margin-top: 10vh;
+    gap: 8vh;
+  }
+  .firstSoftwares{
+    gap: 4vh;
+  }
+  
+  .secondSoftwares{
+    gap: 4vh;
+  }
+  .softwareCard{
+    width: 10vh;
+    height: 15vh;
+    background-color: var(--light);
+    border-radius: 20px;
+  }
+  .softwareCard i{
+    margin-top: 10%;
+    height: 20%;
+    font-size: 5vw;
+  }
+  .softwareCard p{
+    margin-top: 20%;
+    width: 80%;
+    height: 70%;
+    font-size: 1vw;
+  }
 }
 
 
 @media (max-width: 600px){
   
+  .skills{
+    height: 350vw;
+  }
   .school{
     height: 270vw;
+  }
+  
+  .softwareCard p{
+    margin-top: 20%;
+    width: 80%;
+    height: 70%;
+    font-size: 1.5vw;
   }
 }
 
 
 @media (max-width: 420px){
-
-  *hover{
-    color: none;
-    background-color: initial;
-    text-decoration: none;
-    size: initial;
-  }
 
   .school{
     height: 330vw;
@@ -739,7 +871,7 @@
   }
 
   .skills{
-    height: 275vw;
+    height: 380vw;
     background-color: var(--black);
     }
 
@@ -1173,6 +1305,34 @@
       }
 
 
+      .softwares{
+        margin-top: 8vh;
+        gap: 6vh;
+      }
+      .firstSoftwares{
+        gap: 3vh;
+      }
+      
+      .secondSoftwares{
+        gap: 3vh;
+      }
+      .softwareCard{
+        width: 8vh;
+        height: 13vh;
+        background-color: var(--light);
+        border-radius: 20px;
+      }
+      .softwareCard i{
+        margin-top: 10%;
+        height: 20%;
+        font-size: 5vw;
+      }
+      .softwareCard p{
+        margin-top: 20%;
+        width: 80%;
+        height: 70%;
+        font-size: 1.6vw;
+      }
 
 
 
