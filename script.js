@@ -1,3 +1,4 @@
+
 const title = document.getElementById("title");
 const date1 = document.getElementById("date1");
 const date2 = document.getElementById("date2");
@@ -16,6 +17,17 @@ const desc5 = document.getElementById("desc5");
 const contact1 = document.getElementById("idContact1");
 const contact2 = document.getElementById("idContact2");
 const myDescription = document.getElementById("myDescription");
+const soft1 = document.getElementById("soft1");
+const soft2 = document.getElementById("soft2");
+const soft3 = document.getElementById("soft3");
+const soft4 = document.getElementById("soft4");
+const soft5 = document.getElementById("soft5");
+const soft6 = document.getElementById("soft6");
+const soft7 = document.getElementById("soft7");
+const soft8 = document.getElementById("soft8");
+
+
+
 
 const languageToggleBtn = document.getElementById("language-toggle");
 
@@ -46,6 +58,16 @@ languageToggleBtn.addEventListener("click", () => {
     contact1.textContent = "CONTACTS";
     contact2.textContent = "CONTACT ME";
     myDescription.textContent = "I am a software developer with a deep passion for computer science and eager to explore its many fascinating aspects.";
+    soft1.textContent = "Visual studio is the main software that i use to write code.";
+    soft2.textContent = "environment I used to develop mobile applications.";
+    soft3.textContent = "framework I used to develop mobile applications.";
+    soft4.textContent = "i use visual studio code to write html,css javascript e PHP.";
+    soft5.textContent = "my first adobe software, I always had fun playing with it.";
+    soft6.textContent = "I use premiere pro daily to edit all my youtube and instagram videos.";
+    soft7.textContent = "I use it mainly for astrophotography and 2d asset design for my games.";
+    soft8.textContent = "my favorite software, I spend most of my free time creating games on Unity.";
+
+  
   } else {
     
     document.getElementById("imgIT").classList.toggle("show");
@@ -69,6 +91,18 @@ languageToggleBtn.addEventListener("click", () => {
     contact1.textContent = "CONTATTI";
     contact2.textContent = "CONTATTAMI";
     myDescription.textContent = "Sono uno sviluppatore con una forte passione per l'informatica e una grande voglia di esplorare questo mondo.";
+    soft1.textContent = "Visual studio è il software che uso principalmente per scrivere codice.";
+    soft2.textContent = "Ambiente che ho utilizzato per sviluppare applicazioni mobile.";
+    soft3.textContent = "framework che ho utilizzato per sviluppare applicazioni mobile android.";
+    soft4.textContent = "utilizzo Visual studio code per programmare in html,css javascript e PHP.";
+    soft5.textContent = "il mio primo software adobe, fin da piccolo mi divertivo ad usarlo.";
+    soft6.textContent = "utilizzo premier pro giornalmente per editare tutti i miei video su instagram e youtube.";
+    soft7.textContent = "Lo utilizzo principalmente per astrofotografia e disegno asset 2d per i miei videogiochi.";
+    soft8.textContent = "il mio software preferito, passo gran parte del mio tempo libero a creare giochi su Unity.";
+
+  
+  
+  
   }
 });
 
@@ -310,11 +344,13 @@ window.addEventListener('scroll', function() {
   var testo2 = document.querySelector('.myDescription');
   var social = document.querySelector('.socials');
   var socialLine = document.querySelector('.socialLine3');
+  var background = document.querySelector('.homePage');
   var opacita = 1 - window.scrollY / 600;
   testo.style.opacity = opacita;
   testo2.style.opacity = opacita;
   social.style.opacity = opacita;
   socialLine.style.opacity = opacita;
+  background.style.opacity = opacita;
 });
 
 window.addEventListener('scroll', reveal);
@@ -391,6 +427,14 @@ window.addEventListener('load', function() {
     contact1.textContent = "CONTACTS";
     contact2.textContent = "CONTACT ME";
     myDescription.textContent = "I am a software developer with a deep passion for computer science and eager to explore its many fascinating aspects.";
+    soft1.textContent = "Visual studio is the main software that i use to write code.";
+    soft2.textContent = "environment I used to develop mobile applications.";
+    soft3.textContent = "framework I used to develop mobile applications.";
+    soft4.textContent = "i use visual studio code to write html,css javascript e PHP.";
+    soft5.textContent = "my first adobe software, I always had fun playing with it.";
+    soft6.textContent = "I use premiere pro daily to edit all my youtube and instagram videos.";
+    soft7.textContent = "I use it mainly for astrophotography and 2d asset design for my games.";
+    soft8.textContent = "my favorite software, I spend most of my free time creating games on Unity.";
 }, 100);
 
 

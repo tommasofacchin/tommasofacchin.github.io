@@ -11,6 +11,7 @@ html, body {
 }
 
 #pallina {
+  display: none;
   position: absolute;
   width: 200vh;
   height: 200vh;
@@ -109,8 +110,15 @@ margin: 0;
 }
 .homePage{
   height: 100vh;
-  background: url('images/back2.jpg');
+  background: url('images/home.jpg');
   background-size: cover;
+  background-position: right;
+}
+.homePage img{
+  display: none;
+  position: absolute;
+  object-fit: cover;
+  z-index: 10;
 }
 .home{
 height: 85vh;
@@ -899,6 +907,8 @@ transition: all 1s;
   flex-direction: column;
   align-items: center;
   background-color: var(--light);
+  background-image: url("images/back.jpg");
+  background-size: cover;
   border-radius: 20px;
   transition: all .5s ease-in-out;
 }
@@ -924,6 +934,7 @@ transition: all 1s;
 .softwareCard:hover{
   transform: scale(1.1);
   background-color: var(--white);
+  background-image: url("");
 }
 .softwareCard:hover i {
   color: var(--black);

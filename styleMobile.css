@@ -1,3 +1,6 @@
+
+
+
 @media (max-width: 1200px){
 
     
@@ -27,6 +30,10 @@
 .language {
       display: none;
     }
+    
+.homePage{
+  background: url('images/back2.jpg');
+}
 .socials{
     height: 80vh;
     width: 10vh;
@@ -861,6 +868,12 @@
 
 @media (max-width: 420px){
 
+   
+.homePage{
+  background: url('images/mobile.jpg');
+  background-size: cover;
+  background-position: right;
+}
   .school{
     height: 330vw;
     background-color: var(--light);
@@ -935,7 +948,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 8vw;
   margin-top: 10vw;
-  margin-left: 5vw;
+  margin-left: 9vw;
   color: var(--white);
   user-select: none;
   animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
