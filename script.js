@@ -408,7 +408,7 @@ window.addEventListener('load', function() {
         for (var i = 0; i < socialIcons.length; i++) {
           socialIcons[i].classList.add('show');
         }
-      }, 100);
+      }, 1000);
       
     date1.textContent = "(June 2021)";
     date2.textContent = "(July 2023)";
