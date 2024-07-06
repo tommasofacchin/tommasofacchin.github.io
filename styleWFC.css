@@ -162,7 +162,7 @@ html, body {
 
 .MethodDescription {
   margin-left: 2vh;
-  font-size: 2vh;
+  font-size: 3vw;
   font-family: var(--title);
   color: var(--white);
   text-align: left;
