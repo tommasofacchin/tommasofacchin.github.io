@@ -1,0 +1,89 @@
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+:root {
+ --black: #2A3133; 
+ --light: #606364; 
+ --white: #bcbcbc;
+ --title  : 'Montserrat', sans-serif;
+}
+
+.HomePageWFC{
+  height: 100vh;
+  background: url('images/WFC/backgroundHomePage.png');
+  background-size: cover;
+}
+
+.IdeaWFC{
+  height: 75vh;
+  background-color: var(--black);
+  align-items: center;
+  user-select: none;
+}
+
+.GridWFC{
+  height: 100vh;
+  background-color: var(--light);
+  justify-content: center;
+}
+
+.headerTitleWFC{
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .headerTitleWFC h1{
+  font-size: 10vh;
+  text-align: center;
+  font-family: var(--title);
+  color: var(--white);
+  user-select: none;
+  cursor: default;
+ }
+ 
+.Paragrafo {
+  width: 60%;
+  text-align: justify;
+  font-family: var(--title);
+  font-size: 2vh;
+  text-decoration: none;
+  margin: 5vh auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+
+  .IdeaWFC{
+    height: 60vh;
+    background-color: var(--black);
+    align-items: center;
+    user-select: none;
+  }
+
+  .headerTitleWFC h1{
+    font-size: 8vw;
+  }
+
+  .Paragrafo {
+    width: 90%;
+    font-size: 3vw;
+    margin: 0vh auto 0;
+  }
+}
