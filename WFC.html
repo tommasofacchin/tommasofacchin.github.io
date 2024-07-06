@@ -19,21 +19,30 @@
   
   <body>
     <section class="HomePageWFC">
+      
+      <div class="logo">
+        <a href="index.html">TF</a>
+      </div>
     </section>
 
     <section class="IdeaWFC">
-
       <div class="headerTitleWFC">
         <h1>THE IDEA</h1>
       </div>
-
       <div class="Paragrafo">
         L'idea del progetto è di sviluppare un generatore di tilemap procedurale utilizzando l'algoritmo di collasso delle onde (Wave Function Collapse) e matrici di transizione di Markov. Questo approccio permette di creare mappe bidimensionali in modo automatico, garantendo che la disposizione dei tile rispetti specifiche regole di adiacenza. Il sistema calcola le probabilità di posizionamento dei tile in base ai loro vicini già definiti, assicurando una generazione coerente e varia delle mappe. Il risultato è una tilemap visivamente interessante e funzionale, che può essere utilizzata in giochi e altre applicazioni interattive.
       </div>
-
     </section>
     
-    <section class="GridWFC">
+    <section class="ImplementationWFC">
+      <div class="headerTitleWFC">
+        <h1>IMPLEMENTATION</h1>
+      </div>
+      <div class="Paragrafo">
+        Le strutture dati utilizzate sono: un array contenente i vari tiles, una matrice di ‘Cell’ che rappresenta la griglia della tilemap, la classe ‘Cell’, creata per contenere l’id del tile assegnato e l’entropia della cella e quattro matrici float che rappresentano le matrici di transizione di Markov per ogni direzione (top, bottom, left, right) che contengono la probabilità che ogni tile possa averne un altro adiacente. Qui sotto possiamo vedere i tile che ho deciso di utilizzare e le quattro matrici di transizione.
+      </div>
+      <img src="images/WFC/tiles.png" class="ImageTilesWFC">
     </section>
+
   </body>
 </html>

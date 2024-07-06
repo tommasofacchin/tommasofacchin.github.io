@@ -23,7 +23,7 @@ html, body {
   user-select: none;
 }
 
-.GridWFC{
+.ImplementationWFC{
   height: 100vh;
   background-color: var(--light);
   justify-content: center;
@@ -55,7 +55,11 @@ html, body {
   margin: 5vh auto 0;
 }
 
-
+.ImageTilesWFC{
+  display: block;
+  margin: 10vh auto 0;
+  width: 60%;
+ }
 
 
 
@@ -79,11 +83,23 @@ html, body {
 
   .headerTitleWFC h1{
     font-size: 8vw;
+    color: var(--white);
   }
 
   .Paragrafo {
     width: 90%;
     font-size: 3vw;
     margin: 0vh auto 0;
+    color: var(--white);
   }
+  
+.ImageTilesWFC{
+  display: block;
+  margin: 5vh auto 0;
+  width: 90%;
+ }
+
 }
+
+
+
