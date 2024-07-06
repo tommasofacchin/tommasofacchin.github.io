@@ -89,8 +89,9 @@ html, body {
   .Paragrafo {
     width: 90%;
     font-size: 3vw;
+    text-align: left;
     margin: 0vh auto 0;
-    color: white;
+    color: var(--white);
   }
   
 .ImageTilesWFC{
