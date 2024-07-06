@@ -42,7 +42,59 @@
         Le strutture dati utilizzate sono: un array contenente i vari tiles, una matrice di ‘Cell’ che rappresenta la griglia della tilemap, la classe ‘Cell’, creata per contenere l’id del tile assegnato e l’entropia della cella e quattro matrici float che rappresentano le matrici di transizione di Markov per ogni direzione (top, bottom, left, right) che contengono la probabilità che ogni tile possa averne un altro adiacente. Qui sotto possiamo vedere i tile che ho deciso di utilizzare e le quattro matrici di transizione.
       </div>
       <img src="images/WFC/tiles.png" class="ImageTilesWFC">
+      <div class="Methods">
+        <img src="images/WFC/CollapseCell.png" class="MethodImage">
+        <div class="MethodDescription">Metodo ricorsivo che avvia il processo di collasso delle celle, utilizza una Coroutine e richiama i metodi EvaluateEntropy(), CollapseLowestEntropy() e UpdateMatrix(). Alla fine se ci sono ancora celle da collassare richiama se stessa, altrimenti chiama la il metodo Plant(). </div>
+      </div>
+      <div class="Methods">
+        <img src="images/WFC/EvaluateEntropy.png" class="MethodImage">
+        <div class="MethodDescription">Metodo che chiama la funzione GetEntropy() per ogni cella della matrice, se l'entropia di una cella e 0, allora chiama la funzione Explode() per quella cella. infine chiama il metodo UpdateMatrix().</div>
+      </div>
+      <div class="Methods">
+        <img src="images/WFC/GetEntropy.png" class="MethodImage">
+        <div class="MethodDescription">Metodo che in base al type passato (1 or 2) calcola l'entropia di una cella, oppure calcola le probabilità di collasso per una specifica cella utilizzando la matrici di transizione di Markov.</div>
+      </div>
+      <div class="Methods">
+        <img src="images/WFC/CollapseCell.png" class="MethodImage">
+        <div class="MethodDescription">Metodo dove viene finalmente collassata una delle celle con entropia minore, normalizza le probabilità ritornate dal metodo GetEntropy() e sceglie il tile adatto in base alla probabilità normalizzata.</div>
+      </div>
+      <div class="Methods">
+        <img src="images/WFC/Explode.png" class="MethodImage">
+        <div class="MethodDescription">Metodo che gestisce i casi di entropia zero, resettando l'area circostante della grid.</div>
+      </div>
+      <div class="Methods">
+        <img src="images/WFC/UpdateMatrix.png" class="MethodImage">
+        <div class="MethodDescription">Metodo che aggiorna la tilemap in base ai valori della grid.</div>
+      </div>
+      <div class="Methods">
+        <img src="images/WFC/Plant.png" class="MethodImage">
+        <div class="MethodDescription">Metodo che una volta finita di generare la tilemap posiziona dei Prefab per decorare la scena.</div>
+      </div>
     </section>
+    <section class="DemonstrationWFC">
+      <div class="headerTitleWFC">
+        <h1>DEMONSTRATION</h1>
+      </div>
+      <img src="images/WFC/gif1.gif" class="GifWFC">
+      <div class="Paragrafo">
+        Here we can see how the algorithm works. The numbers on the cells represent either the entropy of the cell or the index of the tile placed in that position, enclosed in square brackets.
+      </div>
+      <img src="images/WFC/gif2.gif" class="GifWFC spacedWFC">
+      <div class="Paragrafo">
+        And now we can see what it actually does on the tilemap. Every tiles placed respects the probabilities we defined. After all tiles have been placed, the function <code>Plant()</code> gets called, which adds some decorations to the tilemap.  
+      </div>
 
+      <video width="1920" height="1080" class="FinalVideo" controls>
+        <source src="images/WFC/FinalVideo.mp4">
+      </video>
+
+      <div class="headerTitleWFC">
+        <h1>CONCLUSION</h1>
+      </div>
+      <div class="Paragrafo">
+        The algorithm can of course be used to create way bigger tilemaps and the logic allows you add as many different tiles that you want, like water, mountains, villages and more. This might not be the most efficient way to implement procedural generation in 2D games, but I wanted to make something different using a more probabilistic approach using Markov Chains. 
+      </div>
+
+    </section>
   </body>
 </html>
