@@ -30,8 +30,7 @@
         <h1>THE IDEA</h1>
       </div>
       <div class="Paragrafo">
-        L'idea del progetto è di sviluppare un generatore di tilemap procedurale utilizzando l'algoritmo di collasso delle onde (Wave Function Collapse) e matrici di transizione di Markov. Questo approccio permette di creare mappe bidimensionali in modo automatico, garantendo che la disposizione dei tile rispetti specifiche regole di adiacenza. Il sistema calcola le probabilità di posizionamento dei tile in base ai loro vicini già definiti, assicurando una generazione coerente e varia delle mappe. Il risultato è una tilemap visivamente interessante e funzionale, che può essere utilizzata in giochi e altre applicazioni interattive.
-      </div>
+        This project idea is to develop a procedural tilemap generator using the Wave Function Collapse (WFC) algorithm and Markov transition matrices. This approach enforces the creation of two-dimensional maps while ensuring that the selection of tiles follows specific adjacency rules. The system calculates probabilities for placing tiles based on their already defined neighbors, ensuring consistency and variation of the tilemap. The result is a functional tilemap ready to be used in games or other similar projects.</div>
     </section>
     
     <section class="ImplementationWFC">
@@ -39,36 +38,36 @@
         <h1>IMPLEMENTATION</h1>
       </div>
       <div class="Paragrafo">
-        Le strutture dati utilizzate sono: un array contenente i vari tiles, una matrice di ‘Cell’ che rappresenta la griglia della tilemap, la classe ‘Cell’, creata per contenere l’id del tile assegnato e l’entropia della cella e quattro matrici float che rappresentano le matrici di transizione di Markov per ogni direzione (top, bottom, left, right) che contengono la probabilità che ogni tile possa averne un altro adiacente. Qui sotto possiamo vedere i tile che ho deciso di utilizzare e le quattro matrici di transizione.
+        The data structures I used include are: an array containing the different tiles, a matrix of ‘Cell’ objects representing the tilemap grid, the ‘Cell’ class that stores the assigned tile ID and the entropy of the cell, and four float matrices representing Markov transition matrices for each direction (top, bottom, left, right). These matrices hold the probabilities of each tile transitioning to an adjacent tile. You can see the tiles I have used and the four transition matrices in the images below.
       </div>
       <img src="images/WFC/tiles.png" class="ImageTilesWFC">
       <div class="Methods">
         <img src="images/WFC/CollapseCell.png" class="MethodImage">
-        <div class="MethodDescription">Metodo ricorsivo che avvia il processo di collasso delle celle, utilizza una Coroutine e richiama i metodi EvaluateEntropy(), CollapseLowestEntropy() e UpdateMatrix(). Alla fine se ci sono ancora celle da collassare richiama se stessa, altrimenti chiama la il metodo Plant(). </div>
+        <div class="MethodDescription">	Recursive method that starts the process of collapsing of the cells, use a Coroutine and calls <code>EvaluateEntropy()</code>, <code>CollapseLowestEntropy()</code> and <code>UpdateMatrix()</code>. After that, if there are no more cells to collaps, calls the <code>plant()</code> method, otherwise calls itself.</div>
       </div>
       <div class="Methods">
         <img src="images/WFC/EvaluateEntropy.png" class="MethodImage">
-        <div class="MethodDescription">Metodo che chiama la funzione GetEntropy() per ogni cella della matrice, se l'entropia di una cella e 0, allora chiama la funzione Explode() per quella cella. infine chiama il metodo UpdateMatrix().</div>
+        <div class="MethodDescription">Method that calls the method <code>GetEntropy()</code> for each cells of the grid, if the entropy is zero, then calls the <code>Explode()</code> method for that specific cell. Last, calls the method <code>UpdateMatrix()</code>.</div>
       </div>
       <div class="Methods">
         <img src="images/WFC/GetEntropy.png" class="MethodImage">
-        <div class="MethodDescription">Metodo che in base al type passato (1 or 2) calcola l'entropia di una cella, oppure calcola le probabilità di collasso per una specifica cella utilizzando la matrici di transizione di Markov.</div>
+        <div class="MethodDescription">Method that based on the type gives as parameter returns either an integer representing the entropy of a cell, or a <code>float[]</code>  with the probabilities of collapsing a specific cell using Markov transition matrices.</div>
       </div>
       <div class="Methods">
         <img src="images/WFC/CollapseCell.png" class="MethodImage">
-        <div class="MethodDescription">Metodo dove viene finalmente collassata una delle celle con entropia minore, normalizza le probabilità ritornate dal metodo GetEntropy() e sceglie il tile adatto in base alla probabilità normalizzata.</div>
+        <div class="MethodDescription">Method that finally collapse one of the cell with the lowest entropy, normalize the probabilities returned from the <code>GetEntropy()</code> method and choose the appropriate tile based on the normalized probability.</div>
       </div>
       <div class="Methods">
         <img src="images/WFC/Explode.png" class="MethodImage">
-        <div class="MethodDescription">Metodo che gestisce i casi di entropia zero, resettando l'area circostante della grid.</div>
+        <div class="MethodDescription">method that handles cases of zero entropy by resetting the surrounding area of the grid.</div>
       </div>
       <div class="Methods">
         <img src="images/WFC/UpdateMatrix.png" class="MethodImage">
-        <div class="MethodDescription">Metodo che aggiorna la tilemap in base ai valori della grid.</div>
+        <div class="MethodDescription">Metodo that updates the tilemap based on the values of the grid.</div>
       </div>
       <div class="Methods">
         <img src="images/WFC/Plant.png" class="MethodImage">
-        <div class="MethodDescription">Metodo che una volta finita di generare la tilemap posiziona dei Prefab per decorare la scena.</div>
+        <div class="MethodDescription">Metodo that places prefabs to decorate the scene once the tilemap generation is completed.</div>
       </div>
     </section>
     <section class="DemonstrationWFC">
