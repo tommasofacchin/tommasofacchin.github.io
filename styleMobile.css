@@ -796,7 +796,7 @@
     height: 230vw;
   }
   .skills{
-    height: 270vw;
+    height: 220vw;
   }
   .knowHow{
     margin-top: 5vh;
@@ -884,7 +884,7 @@
   }
 
   .skills{
-    height: 380vw;
+    height: 300vw;
     background-color: var(--black);
     }
 
