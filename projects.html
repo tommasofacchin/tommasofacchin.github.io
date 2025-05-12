@@ -78,7 +78,6 @@
     scroll-snap-align: center;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     height: 250px;
     background: #1c1c1c;
     display: flex;
@@ -145,13 +144,16 @@
     color: #00aaff;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1300px) {
+    .project-card{
+    max-width: 80%;
+    }
   .project-card h2 {
     font-size: 1.5rem;
   }
 
   .project-card p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .slider-item {
@@ -175,6 +177,13 @@
     flex-direction: row;
     gap: 1rem;
   }
+  .tech-tags span {
+    font-size: 1.5rem;
+  }
+
+.project-links a {
+  font-size: 1.5rem;
+}
 }
 
 </style>
