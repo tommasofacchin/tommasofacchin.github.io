@@ -1,0 +1,1365 @@
+
+
+
+@media (max-width: 1200px){
+
+    
+
+.school{
+    background-color: var(--light);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+.skills{
+    height: 1000vw;
+    background-color: var(--black);
+    }
+  .contactMe{
+    height: 150vw;
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/back.jpg');
+    background-size: cover;
+  }
+
+.language {
+      display: none;
+    }
+    
+.homePage{
+  background: url('images/back2.jpg');
+}
+.socials{
+    height: 80vh;
+    width: 10vh;
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+  
+.logo{
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 5vh;
+    user-select: none;
+}
+
+
+  .headerTitle h1{
+    font-size: 13vw;
+    text-align: center;
+    font-family: var(--title);
+    color: var(--white);
+    user-select: none;
+    cursor: default;
+  }
+
+  .work{
+  background-color: var(--black);
+  height: 500vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  }
+  .job{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 125vw;
+    width: 100%;
+    margin-top: 15vh;
+  }
+  
+  .left{
+    background-color: black;
+    height: 45vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border-radius: 60px 0 0 0;
+  }
+  .bottom{
+    top: 3vh;
+    left: 3vh;
+    position: relative;
+    height: 45vw;
+    width: 80vw;
+    z-index: 0;
+    border: 2px solid white;
+    border-radius: 60px 0 0 0;
+  }
+  
+  .right{
+  margin-top: 5vh;
+  height: auto;
+  width: 80vw;
+  user-select: none;
+  cursor: default;
+  color: var(--white);
+  }
+  .right h1{
+  font-family: var(--title);
+  font-size: 10vw;
+  }
+  .right span.date{
+    font-family: work sans;
+    font-size: 1.5vh;
+    line-height: .1;
+    color: var(--white)
+  }
+  .right h2{
+    font-family: var(--title);
+    font-size: 5vw;
+    line-height: .1;
+    margin-top: 5vh;
+  }
+  .right p{
+    font-family: work sans;
+    font-size: 3vw;
+  }
+  
+  
+  
+  .schools{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 25vw;
+    width: 100%;
+    margin-top: 30vh;
+  }
+  .center{
+    height: auto;
+    width: 80vw;
+    user-select: none;
+    cursor: default;
+    color: var(--white);
+    }
+    .center h1{
+    font-family: var(--title);
+    font-size: 8vw;
+    }
+    .center span.date{
+      font-family: work sans;
+      color: var(--white);
+      font-size: 1.5vh;
+      line-height: .1;
+    }
+    .center h2{
+      font-family: var(--title);
+      font-size: 5vw;
+      line-height: .1;
+      margin-top: 5vh;
+    }
+    .center p{
+      font-family: work sans;
+      font-size: 4vw;
+    }
+  
+
+
+    .contactDiv{
+
+        width: 80vw;
+        height: 120vw;
+        background-color: var(--black);
+        box-shadow: 2vh 2vh 30px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contactLeft{
+        width: 80%;
+        height: 40%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .contactInfo {
+        width: 100%;
+        height: 30%;
+        align-self: flex-start;
+        text-align: center;
+      }
+      .contactLeft h2 {
+        margin-bottom: 10%;
+        font-size: 6vw;
+        color: var(--white);
+        font-family: var(--title);
+        user-select: none;
+      }
+      .contactLeft h3 {
+        margin-top: 5%;
+        font-size: 3vw;
+        color: var(--white);
+        font-family: work sans;
+        user-select: none;
+      }
+      
+      .contactLeft p {
+        margin: 0;
+        font-size: 2vw;
+        color: var(--white);
+        font-family: work sans;
+        text-decoration: none;
+      }
+      
+      .contactLeft p a {
+        transition: all .5s;
+        color: var(--light);
+        text-decoration: none;
+      }
+      .contactLeft p a:hover {
+        color: var(--white);
+      }
+      
+      
+      .socialsContact{
+        margin-left: 0vh;
+        margin-top: 50%;
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+      }
+      .socialContact{
+        margin-right: 1vw;
+        margin-left: 1vw;
+        text-align: center;
+        width: 5vh;
+        height: 5vh;
+        color: var(--white);
+        align-self: flex-end;
+      }
+      .socialContact i{
+        font-size: 3vw;
+      }
+      .socialContact a:hover{
+        color: var(--black);
+      }
+      .socialContact a{
+        position: relative;
+        color: var(--white);
+        transition: .4s;
+        z-index: 1;
+      }
+      .socialContact a:before {
+        content: "";
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        background-color: var(--white);
+        opacity: 0;
+        transition: opacity .4s, transform .4s;
+        z-index: -1;
+      }
+      
+      .socialContact a:hover:before {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+      
+      .contactRight{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 45%;
+        background-color: var(--black);
+        box-shadow: 2vh 2vh 30px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+      .contactRight h1{
+        margin-left: 0%;
+        text-align: center;
+        font-size: 6vw;
+        color: var(--white);
+        font-family: var(--title);
+        user-select: none;
+      }
+      .input-field{
+        width: 80%;
+        height: 6vw;
+        margin-top: 1vw;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: var(--black);
+        outline: none;
+        border: none;
+        border-bottom: .5px solid white;
+        font-family: work sans;
+        font-size: 2vw;
+        color: var(--white);
+      }
+      .area-field{
+        width: 80%;
+        height: 5vw;
+        margin-top: 1vw;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: var(--black);
+        outline: none;
+        border: none;
+        resize: none;
+        border-bottom: .5px solid white;
+        font-family: work sans;
+        font-size: 2vw;
+        color: var(--white);
+      }
+      .btn{
+        height: 7vw;
+        width: 7vw;
+        margin-left: 70%;
+        margin-top: 3vw;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+        font-size: 2vh;
+        color: var(--white);
+        background-color: var(--black);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+      }
+      .btn:hover {
+        transform: scale(1.2);
+        background-color: var(--white);
+        color: var(--black);
+      }
+
+
+      .knowHow{
+        margin-top: 10vw;
+      }
+      .knowHow i{
+        font-size: 6vw;
+      }
+
+
+      
+    .softwares{
+      margin-top: 10vw;
+      gap: 5vw;
+    }
+    .firstSoftwares{
+      gap: 7vh;
+    }
+    
+    .secondSoftwares{
+      gap: 7vh;
+    }
+    .softwareCard{
+      width: 10vw;
+      height: 20vw;
+      background-color: var(--light);
+      border-radius: 20px;
+    }
+    .softwareCard i{
+      margin-top: 10%;
+      height: 20%;
+      font-size: 6vw;
+    }
+    .softwareCard p{
+      margin-top: 20%;
+      width: 80%;
+      height: 70%;
+      font-size: 1.5vw;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+
+    .skills{
+      height: 120vh;
+    }
+    
+
+    
+
+    .name{
+      position: absolute;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 5vw;
+      margin-top: 3vw;
+      margin-left: 13vw;
+      color: var(--white);
+      user-select: none;
+      animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
+    }
+    
+    .myDescription{
+      width: 40vw;
+      position: absolute;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2vw;
+      margin-top: 10vw;
+      margin-left: 15vw;
+      color: var(--white);
+      user-select: none;
+      animation: slide-right .6s cubic-bezier(.4, 0, .2, 1) forwards;
+    }
+
+      .headerTitle h1{
+        font-size: 8vw;
+        text-align: center;
+        font-family: var(--title);
+        user-select: none;
+        cursor: default;
+      }
+      .work{
+        height: 350vw;
+      }
+      .job{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vw;
+        width: 100%;
+        margin-top: 10vh;
+      }
+    
+    
+    
+      .left{
+        background-color: black;
+        height: 36vw;
+        width: 64vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        z-index: 1;
+        float: left;
+        border-radius: 60px 0 0 0;
+      }
+      .bottom{
+        height: 36vw;
+        width: 64vw;
+        position: relative;
+        z-index: 0;
+        border: 2px solid white;
+        border-radius: 60px 0 0 0;
+      }
+      .right{
+        margin-top: 5vw;
+        height: 50vw;
+        width: 80vw;
+        user-select: none;
+        cursor: default;
+        color: var(--white);
+        }
+        .right h1{
+        font-family: var(--title);
+        font-size: 8vw;
+        }
+        .right span.date{
+          font-family: work sans;
+          font-size: 2vw;
+          line-height: .1;
+          color: var(--white)
+        }
+        .right h2{
+          font-family: var(--title);
+          font-size: 4vw;
+          line-height: .1;
+          margin-top: 5vh;
+        }
+        .right p{
+          font-family: work sans;
+          font-size: 2vw;
+        }
+    
+    
+    
+    .school{
+      height: 130vw;
+    }
+    .center{
+      margin-top: 30vw;
+      height: 54vw;
+      width: 80%;
+      user-select: none;
+      cursor: default;
+      }
+      .center h1{
+        font-family: var(--title);
+      font-size: 6vw;
+      line-height: .1;
+      }
+      .center span.date{
+        font-family: var(--title);
+        font-size: 1vw;
+        color: var(--white);
+        line-height: .1;
+      }
+      .center h2{
+        font-family: var(--title);
+        font-size: 3.9vw;
+        line-height: .1;
+        margin-bottom: 5vh;
+      }
+      .center p{
+        font-family: work sans;
+        font-size: 3vw;
+      }
+    
+      
+    .languagesSkill{
+      width: 80%;
+    }
+    
+
+    .softwares{
+      margin-top: 30vh;
+      gap: 9vh;
+    }
+    .firstSoftwares{
+      gap: 7vh;
+    }
+    
+    .secondSoftwares{
+      gap: 7vh;
+    }
+    .softwareCard{
+      width: 20vh;
+      height: 30vh;
+      background-color: var(--light);
+      border-radius: 20px;
+    }
+    .softwareCard i{
+      margin-top: 10%;
+      height: 20%;
+      font-size: 6vh;
+    }
+    .softwareCard p{
+      margin-top: 20%;
+      width: 80%;
+      height: 70%;
+      font-size: 1.5vh;
+    }
+}
+
+
+@media screen and (max-width: 1500px){
+
+  .heartContainer{
+    display: none;
+  }
+  .skills{
+    height: 190vw;
+  }
+  
+  .name{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vh;
+    margin-top: 10vh;
+    margin-left: 25vh;
+    color: var(--white);
+    user-select: none;
+    animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
+  }
+  
+  .myDescription{
+    width: 60vh;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+    margin-top: 25vh;
+    margin-left: 30vh;
+    color: var(--white);
+    user-select: none;
+    animation: slide-right .6s cubic-bezier(.4, 0, .2, 1) forwards;
+  }
+  .langLine{
+    display: none;
+  }
+    .socialLine1{
+      display: none;
+    }
+    .socialLine2{
+      display: none;
+    }
+    .socialLine3{
+      display: none;
+    }
+    .socialLine4{
+      display: none;
+  }
+  
+    .headerTitle h1{
+      font-size: 8vw;
+      text-align: center;
+      font-family: var(--title);
+      user-select: none;
+      cursor: default;
+    }
+    .work{
+      height: 330vw;
+    }
+    .job{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vw;
+      width: 100%;
+      margin-top: 10vh;
+    }
+  
+  
+  
+    .left{
+      background-color: black;
+      height: 36vw;
+      width: 64vw;
+      margin-left: auto;
+      margin-right: auto;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      z-index: 1;
+      float: left;
+      border-radius: 60px 0 0 0;
+    }
+    .bottom{
+      height: 36vw;
+      width: 64vw;
+      position: relative;
+      z-index: 0;
+      border: 2px solid white;
+      border-radius: 60px 0 0 0;
+    }
+    .right{
+      margin-top: 5vw;
+      height: 50vw;
+      width: 80vw;
+      user-select: none;
+      cursor: default;
+      color: var(--white);
+      }
+      .right h1{
+      font-family: var(--title);
+      font-size: 8vw;
+      }
+      .right span.date{
+        font-family: work sans;
+        font-size: 2vw;
+        line-height: .1;
+        color: var(--white)
+      }
+      .right h2{
+        font-family: var(--title);
+        font-size: 4vw;
+        line-height: .1;
+        margin-top: 5vh;
+      }
+      .right p{
+        font-family: work sans;
+        font-size: 2vw;
+      }
+  
+  
+  
+  .schools{
+  height: 40vh;
+  margin-top: 15vh;
+  width: 100%;
+  }
+  .center{
+    margin-top: 30vw;
+    height: 54vw;
+    width: 80%;
+    user-select: none;
+    cursor: default;
+    }
+    .center h1{
+      font-family: var(--title);
+    font-size: 6vw;
+    line-height: .1;
+    }
+    .center span.date{
+      font-family: var(--title);
+      font-size: 1vw;
+      color: var(--white);
+      line-height: .1;
+    }
+    .center h2{
+      font-family: var(--title);
+      font-size: 2vw;
+      line-height: .1;
+      margin-bottom: 5vh;
+    }
+    .center p{
+      font-family: var(--title);
+      font-size: 1.5vw;
+    }
+  
+    
+  .languagesSkill{
+    width: 80%;
+  }
+  
+
+
+.softwares{
+  margin-top: 30vh;
+}
+}
+  
+@media (max-width: 1000px){
+  
+  .school{
+    height: 200vw;
+  }
+  .skills{
+    height: 250vw;
+  }
+  .knowHow{
+    gap: 10vh;
+  }
+  .firstRow{
+    gap: 10vh;
+  }
+  .secondRow{
+    gap: 10vh;
+  }
+  .knowHow i{
+    font-size: 6vw;
+  }
+
+
+  
+
+  .softwares{
+    margin-top: 20vh;
+    gap: 8vh;
+  }
+  .firstSoftwares{
+    gap: 5vh;
+  }
+  
+  .secondSoftwares{
+    gap: 5vh;
+  }
+  .softwareCard{
+    width: 15vh;
+    height: 20vh;
+    background-color: var(--light);
+    border-radius: 20px;
+  }
+  .softwareCard i{
+    margin-top: 10%;
+    height: 20%;
+    font-size: 5vw;
+  }
+  .softwareCard p{
+    margin-top: 20%;
+    width: 80%;
+    height: 70%;
+    font-size: 1vw;
+  }
+}
+
+
+@media (max-width: 700px){
+  
+  .school{
+    height: 230vw;
+  }
+  .skills{
+    height: 220vw;
+  }
+  .knowHow{
+    margin-top: 5vh;
+    gap: 5vh;
+  }
+  .firstRow{
+    gap: 5vh;
+  }
+  .secondRow{
+    gap: 5vh;
+  }
+  .knowHow i{
+    font-size: 4vw;
+  }
+  .knowLine{
+    width: 30vw;
+  }
+
+
+  
+  .softwares{
+    margin-top: 10vh;
+    gap: 8vh;
+  }
+  .firstSoftwares{
+    gap: 4vh;
+  }
+  
+  .secondSoftwares{
+    gap: 4vh;
+  }
+  .softwareCard{
+    width: 10vh;
+    height: 15vh;
+    background-color: var(--light);
+    border-radius: 20px;
+  }
+  .softwareCard i{
+    margin-top: 10%;
+    height: 20%;
+    font-size: 5vw;
+  }
+  .softwareCard p{
+    margin-top: 20%;
+    width: 80%;
+    height: 70%;
+    font-size: 1vw;
+  }
+}
+
+
+@media (max-width: 600px){
+  
+  .skills{
+    height: 350vw;
+  }
+  .school{
+    height: 270vw;
+  }
+  
+  .softwareCard p{
+    margin-top: 20%;
+    width: 80%;
+    height: 70%;
+    font-size: 1.5vw;
+  }
+}
+
+
+@media (max-width: 420px){
+
+   
+.homePage{
+  background: url('images/mobile.jpg');
+  background-size: cover;
+  background-position: right;
+}
+  .school{
+    height: 330vw;
+    background-color: var(--light);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .skills{
+    height: 300vw;
+    background-color: var(--black);
+    }
+
+    
+.languagesSkill{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top : 0vh;
+  width: 80vw;
+  color: black;
+  list-style: none;
+}
+.languagesSkill li{
+  margin-bottom: 3vh;
+  padding: 10px;
+}
+.skillbar{
+  background-color: black;
+  display: block;
+  height: .5vh;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+  .contactMe{
+    height: 130vh;
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/back.jpg');
+    background-size: cover;
+  }
+
+.language {
+      display: none;
+    }
+.socials{
+    height: 75vh;
+    width: 5vh;
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+  
+.logo a{
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 1vh;
+    user-select: none;
+    font-size: 5vh;
+}
+
+
+.name{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8vw;
+  margin-top: 10vw;
+  margin-left: 9vw;
+  color: var(--white);
+  user-select: none;
+  animation: slide-in .6s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+
+.myDescription{
+  width: 67vw;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4vw;
+  margin-top: 27vw;
+  margin-left: 10vw;
+  color: var(--white);
+  user-select: none;
+  animation: slide-right .6s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+
+  .headerTitle h1{
+    font-size: 13vw;
+    text-align: center;
+    font-family: var(--title);
+    color: var(--white);
+    user-select: none;
+    cursor: default;
+  }
+
+  .work{
+  background-color: var(--black);
+  height: 600vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  }
+  .job{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150vw;
+    width: 100%;
+    margin-top: 15vh;
+  }
+  
+  .left{
+    background-color: black;
+    height: 45vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border-radius: 30px 0 0 0;
+  }
+  .bottom{
+    top: 1vh;
+    left: 1vh;
+    position: relative;
+    height: 45vw;
+    width: 80vw;
+    z-index: 0;
+    border: 1px solid white;
+    border-radius: 60px 0 0 0;
+  }
+  
+  .right{
+  margin-top: 5vh;
+  height: auto;
+  width: 80vw;
+  user-select: none;
+  cursor: default;
+  color: var(--white);
+  }
+  .right h1{
+  font-family: var(--title);
+  font-size: 10vw;
+  }
+  .right span.date{
+    font-family: work sans;
+    font-size: 1.5vh;
+    line-height: .1;
+    color: var(--white)
+  }
+  .right h2{
+    font-family: var(--title);
+    font-size: 5vw;
+    line-height: .1;
+    margin-top: 5vh;
+  }
+  .right p{
+    font-family: work sans;
+    font-size: 4vw;
+  }
+  
+  
+  
+  .schools{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vw;
+    width: 100%;
+    margin-top: 10vh;
+  }
+  .center{
+    height: auto;
+    width: 80vw;
+    margin-top: 0vw;
+    user-select: none;
+    cursor: default;
+    color: var(--white);
+    }
+    .center h1{
+    font-family: var(--title);
+    font-size: 8vw;
+    }
+    .center span.date{
+      font-family: work sans;
+      color: var(--white);
+      font-size: 1.5vh;
+      line-height: .1;
+    }
+    .center h2{
+      font-family: var(--title);
+      font-size: 3.9vw;
+      line-height: .1;
+      margin-top: 5vh;
+    }
+    .center p{
+      font-family: work sans;
+      font-size: 4vw;
+    }
+  
+
+  
+    .contactDiv{
+
+        width: 90vw;
+        height: 90vh;
+        background-color: var(--black);
+        box-shadow: 2vh 2vh 30px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contactLeft{
+        width: 80%;
+        height: 40%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .contactInfo {
+        width: 100%;
+        height: 30%;
+        align-self: flex-start;
+        text-align: center;
+      }
+      .contactLeft h2 {
+        margin-bottom: 10%;
+        font-size: 10vw;
+        color: var(--white);
+        font-family: var(--title);
+        user-select: none;
+      }
+      .contactLeft h3 {
+        margin-top: 5%;
+        font-size: 5vw;
+        color: var(--white);
+        font-family: work sans;
+        user-select: none;
+      }
+      
+      .contactLeft p {
+        margin: 0;
+        font-size: 4vw;
+        color: var(--white);
+        font-family: work sans;
+        text-decoration: none;
+      }
+      
+      .contactLeft p a {
+        transition: all .5s;
+        color: var(--light);
+        text-decoration: none;
+      }
+      .contactLeft p a:hover {
+        color: var(--white);
+      }
+      
+      
+      .socialsContact{
+        margin-left: 0vh;
+        margin-top: 70%;
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+      }
+      .socialContact{
+        margin-right: 1vw;
+        margin-left: 1vw;
+        text-align: center;
+        width: 5vh;
+        height: 5vh;
+        color: var(--white);
+        align-self: flex-end;
+      }
+      .socialContact i{
+        font-size: 5vw;
+      }
+      .socialContact a:hover{
+        color: var(--black);
+      }
+      .socialContact a{
+        position: relative;
+        color: var(--white);
+        transition: .4s;
+        z-index: 1;
+      }
+      .socialContact a:before {
+        content: "";
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        background-color: var(--white);
+        opacity: 0;
+        transition: opacity .4s, transform .4s;
+        z-index: -1;
+      }
+      
+      .socialContact a:hover:before {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+      
+      .contactRight{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 45%;
+        background-color: var(--black);
+        box-shadow: 2vh 2vh 30px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+      .contactRight h1{
+        margin-left: 0%;
+        text-align: center;
+        font-size: 8vw;
+        color: var(--white);
+        font-family: var(--title);
+        user-select: none;
+      }
+      .input-field{
+        width: 80%;
+        height: 10vw;
+        margin-top: 1vw;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: var(--black);
+        outline: none;
+        border: none;
+        border-bottom: .5px solid white;
+        font-family: work sans;
+        font-size: 4vw;
+        color: var(--white);
+      }
+      .area-field{
+        width: 80%;
+        height: 10vw;
+        margin-top: 1vw;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: var(--black);
+        outline: none;
+        border: none;
+        resize: none;
+        border-bottom: .5px solid white;
+        font-family: work sans;
+        font-size: 4vw;
+        color: var(--white);
+      }
+      .btn{
+        height: 7vw;
+        width: 7vw;
+        margin-left: 70%;
+        margin-top: 5vw;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+        overflow: visible;
+        font-size: 3vh;
+        color: var(--white);
+        background-color: var(--black);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+      }
+      .btn:hover {
+        transform: scale(1.2);
+        background-color: var(--white);
+        color: var(--black);
+      }
+      .btn i{
+        text-align: center;
+        overflow: visible;
+      }
+
+
+
+
+
+
+      .knowHow{
+        margin-top: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12vw;
+      }
+      .firstRow{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 8vw;
+        transform: none !important;
+        transition: none !important;
+      }
+      .secondRow{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 8vw;
+        transform: none !important;
+        transition: none !important;
+      }
+      .knowHow i{
+        font-size: 10vw;
+        color: var(--white);
+      }
+      
+      .knowLine{
+        position: absolute;
+        height: .1vh;
+        width: 40vw;
+        background-color: var(--white);
+      }
+
+
+      .softwares{
+        margin-top: 8vh;
+        gap: 6vh;
+      }
+      .firstSoftwares{
+        gap: 2vh;
+      }
+      
+      .secondSoftwares{
+        gap: 2vh;
+      }
+      .softwareCard{
+        width: 11vh;
+        height: 16vh;
+        background-color: var(--light);
+        border-radius: 20px;
+      }
+      .softwareCard i{
+        margin-top: 10%;
+        height: 20%;
+        font-size: 5vw;
+      }
+      .softwareCard p{
+        margin-top: 20%;
+        width: 80%;
+        height: 70%;
+        font-size: 1.6vw;
+      }
+
+
+
+
+
+
+
+
+
+
+      .reveal{
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s ease;
+      }
+
+}

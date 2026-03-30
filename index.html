@@ -1,217 +1,521 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styleMobile.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo Black">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <script src="https://kit.fontawesome.com/98cacf8d46.js" crossorigin="anonymous"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>Tommaso Facchin</title>
+
+    <!-- Font + Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
-  
-  
   <body>
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-inner">
 
-<div class="heartContainer">
-  <div class="heart" id="h1"><div class="heartFilled1"></div></div>
-  <div class="heart"id="h2"><div class="heartFilled2"></div></div>
-  <div class="heart"id="h3"><div class="heartFilled3"></div></div>
-  <div class="heart"id="h4"><div class="heartFilled4"></div></div>
-</div>
+        <nav class="topbar-nav">
+          <a href="#about" class="topbar-link">About</a>
+          <a href="#education" class="topbar-link">Education</a>
+          <a href="#experience" class="topbar-link">Experience</a>
+          <a href="#projects" class="topbar-link">Projects</a>
+          <a href="#skills" class="topbar-link">Skills</a>
+        </nav>
+      </div>
+    </header>
 
-    <div id="loader"></div>
-<div id="content" style="display:none;">
-  
-
-  <div class="socialLine2"></div>
-  <div class="socialLine1"></div>
-  <div class="socialLine4"></div>
-  <div class="socialLine3"></div>
-  <section class="homePage">
-    <img src="images/profile.png">
-    <nav>
-      <div class="logo">
-        <a href="">TF</a>
-      </div>
-      <div class="language">
-        <input type="checkbox" id="language-toggle">
-        <label for="language-toggle" class="button">
-          <img src="svg/gb.svg" id="imgGB">
-          <img src="svg/it.svg" id="imgIT">
-        </label>
-      </div>
-    </nav>
-
-    <h1 class="name">Tommaso Facchin</h1>
-    <p class="myDescription" id="myDescription">Tommaso Facchin</p>
-    <div class="langLine"></div>
-    <div class="socialLine3"></div>
-
-    <div id="pallina"></div>
-    <section class="home">
-      <div class="socials">
-        <div class="social"><a href="https://www.instagram.com/tommasofacchin_" target="_blank"><i class="fab fa-instagram"></i></a></i></div>
-        <div class="social"><a href="https://www.youtube.com/@tommasofacchin_" target="_blank"><i class="fab fa-youtube"></i></a></i></div>
-        <div class="social"><a href="https://it.linkedin.com/in/tommaso-facchin-59454219b" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></i></div>
-        <div class="social"><a href="https://github.com/tommasofacchin" target="_blank"><i class="fa-brands fa-github"></i></a></i></div>
-      </div>
-    </section>
-  </section>
-
-    <section class="school">
-      <div class="headerTitle">
-        <h1>SCHOOL EDUCATION</h1>
-      </div>
-      <div class="schools">
-        <div class="center">
-          <h1 id="title">ITS Einaudi Scarpa</h1>
-          <span class="date">(2016 - 2022)</span>
-          <h2 id="subtitle1">IT and telecommunications</h2>
-          <p class="reveal" id="desc1"></p>          
-        </div>
-      </div>
-      
-      <div class="schools">
-        <div class="center">
-          <h1 id="title">Ca' Foscari</h1>
-          <span class="date" id="date3">(2022 - current)</span>
-          <h2 id="subtitle2">Bachelor's degree - computer science</h2>
-          <p class="reveal" id="desc2"></p>          
-        </div>
-      </div>
-    </section>
-    <section class="work">
-      <div class="headerTitle">
-        <h1>WORK EXPERIENCE</h1>
-      </div>
-      
-      <div class="job">
-        
-        <div class="container">
-          <div class="left" id="id2M"></div>
-          <div class="bottom"></div>
-        </div>
-        <div class="right">
-          <h1 id="title">2M Decori</h1>
-          <span class="date" id="date2">(july 2023)</span>
-          <h2 id="subtitle4">Software Development</h2>
-          <p class="reveal" id="desc4"></p>          
-        </div>
-      </div>
-      
-      <div class="job">
-        
-        <div class="container">
-          <div class="left" id="idGate"></div>
-          <div class="bottom"></div>
-        </div>
-        <div class="right">
-          <h1 id="title">GateDev</h1>
-          <span class="date" id="date1">(june 2021)</span>
-          <h2 id="subtitle3">Android App Development Internship</h2>
-          <p class="reveal" id="desc3"></p>          
-        </div>
-      </div>
-      
-      <div class="job">
-        
-        <div class="container">
-          <div class="left" id="idForno"></div>
-          <div class="bottom"></div>
-        </div>
-        <div class="right">
-          <h1 id="title">Forno d'Asolo</h1>
-          <span class="date" id="date4">(January 2020)</span>
-          <h2 id="subtitle5"></h2>
-          <p class="reveal" id="desc5"></p>          
-        </div>
-      </div>
-    </section>
-    <section class="skills">
-      <div class="headerTitle">
-        <h1>SKILLS</h1>
-      </div>
-
-      
-      <div class="languagesSkill" id="languages">
-        <li>
-          <h3>Italian</h3>
-          <span class="skillbar"><span class="italianSkill"></span></span>
-        </li>
-        <li>
-          <h3>English</h3>
-          <span class="skillbar"><span class="englishSkill"></span></span>
-        </li>
-        <li>
-          <h3>Spanish</h3>
-          <span class="skillbar"><span class="spanishSkill"></span></span>
-        </li>
-      </div>
-
-      <div class="knowHow">
-        <div class="firstRow">     
-          <i class="devicon-csharp-line iconShow" id="cshart"></i>
-          <i class="devicon-dotnetcore-plain iconShow" id="dotnet"></i>
-          <i class="devicon-c-line iconShow" id="c"></i>
-          <i class="devicon-cplusplus-line iconShow" id="cplus"></i>   
-          <i class="devicon-azuresqldatabase-plain iconShow" id="sql"></i>
-          
-        </div>
-        <div class="knowLine"></div>
-        <div class="secondRow">
-          <i class="devicon-python-plain iconShow" id="python"></i>
-          <i class="devicon-pandas-plain-wordmark iconShow" id="pandas"></i>
-          <i class="devicon-scikitlearn-plain iconShow" id="scikit"></i>
-          <i class="devicon-java-plain-wordmark iconShow" id="java"></i>
-          <i class="devicon-html5-plain-wordmark iconShow" id="html"></i>
-          <i class=""></i>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="contactMe">
-
-      <div class="contactDiv revealDiv">
-        <div class="contactLeft">
-
-          <div class="contactInfo">
-            <h2 id="idContact1">CONTACTS</h2>
-            <h3>Phone</h3>
-            <p><a href="tel:+393334423369">+39 3334423369</a></p>
-            <h3>Email</h3>
-            <p><a href="mailto:tommasofacchin77@gmail.com">tommasofacchin77@gmail.com</a></p>
+    <!-- CONTENT -->
+    <main class="app-shell">
+      <!-- HEADING -->
+      <section id="about" class="section section-heading">
+        <div class="heading-left">
+          <div class="heading-main">
+            <h1 class="heading-name">Tommaso Facchin</h1>
+            <p class="heading-role">
+              Data Science Graduate and Software Developer
+            </p>
           </div>
 
-          <div class="socialsContact">
-            <div class="socialContact"><a href="https://www.instagram.com/tommasofacchin_" target="_blank"><i class="fab fa-instagram"></i></a></i></div>
-            <div class="socialContact"><a href="https://www.youtube.com/@tommasofacchin_" target="_blank"><i class="fab fa-youtube"></i></a></i></div>
-            <div class="socialContact"><a href="https://it.linkedin.com/in/tommaso-facchin-59454219b" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></i></div>
-            <div class="socialContact"><a href="https://github.com/tommasofacchin" target="_blank"><i class="fa-brands fa-github"></i></a></i></div>
+          <div class="heading-meta">
+            <div class="heading-line">
+              <span class="heading-label">Email</span>
+              <a
+                href="mailto:tommasofacchin77@gmail.com"
+                class="link-accent"
+              >
+                tommasofacchin77@gmail.com
+              </a>
+            </div>
+
+            <div class="heading-line">
+              <span class="heading-label">Website</span>
+              <a
+                href="http://tommasofacchin.github.io/"
+                target="_blank"
+                class="link-accent"
+              >
+                tommasofacchin.github.io
+              </a>
+            </div>
+
+            <div class="heading-line">
+              <span class="heading-label">Kaggle</span>
+              <a
+                href="https://www.kaggle.com/tommasofacchin"
+                target="_blank"
+                class="link-accent"
+              >
+                kaggle.com/tommasofacchin
+              </a>
+            </div>
+
+            <div class="heading-line">
+              <span class="heading-label">Instagram</span>
+              <a
+                href="https://www.instagram.com/tommasofacchin_"
+                target="_blank"
+                class="link-accent"
+              >
+                @tommasofacchin_
+              </a>
+            </div>
+
+            <div class="heading-socials heading-socials-top">
+              <a
+                href="https://github.com/tommasofacchin"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tommaso-facchin-59454219b"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.kaggle.com/tommasofacchin"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fa-solid fa-chart-line"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/tommasofacchin_"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="contactRight">
-          <form action="https://formspree.io/f/mqkvaloz" method="POST">
-            <h1 id="idContact2"> Contact me</h1>
-            <input type="text" class="input-field" name="name" placeholder="Name">
-            <input type="email" class="input-field" name="email" placeholder="Email">
-            <textarea type="text" class="area-field" name="message" placeholder="Message"></textarea>
-            <button type="submit" class="btn"><i class="fa-regular fa-paper-plane"></i></button>
-        </form>
+
+        <div class="heading-photo-wrap">
+          <img
+            src="images/profile.jpg"
+            alt="Tommaso Facchin"
+            class="heading-photo"
+          />
         </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">MITx</h3>
+                <div class="timeline-subtitle">
+                  MicroMasters in Statistics and Data Science
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-location">Online</span>
+                <span class="timeline-dates">Jan. 2026 – Present</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">
+                  Ca' Foscari University of Venice
+                </h3>
+                <div class="timeline-subtitle">
+                  Bachelor of Science in Data Science
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-location">Venice, Italy</span>
+                <span class="timeline-dates">Sep. 2022 – Mar. 2026</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+          <!-- Isoft -->
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Isoft Srl</h3>
+                <div class="timeline-subtitle">
+                  Software Developer
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-location">Borso del Grappa, Italy</span>
+                <span class="timeline-dates">Oct. 2023 – Present</span>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li>
+                <span class="bullet-title">ERP backend development:</span>
+                Working on an ERP system for jewelry manufacturing, maintaining and
+                extending core modules in VB.NET and C#, using REST APIs and
+                microservices.
+              </li>
+              <li>
+                <span class="bullet-title">Database optimization:</span>
+                Managing and optimizing SQL Server databases (T-SQL, indexing,
+                query tuning), designing relational schemas and ETL jobs.
+              </li>
+              <li>
+                <span class="bullet-title">Automation and APIs:</span>
+                Building Python automation scripts and REST APIs in C# .NET for
+                third-party integrations, reporting, and data pipelines.
+              </li>
+              <li>
+                <span class="bullet-title">Forecasting system:</span>
+                Designed and implemented a new order-forecasting system using
+                time-series models and statistical analysis, replacing the legacy
+                MRP module.
+              </li>
+            </ul>
+          </article>
+
+          <!-- 2M Decori -->
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">2M Decori</h3>
+                <div class="timeline-subtitle">
+                  Software Developer Intern
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-location">Segusino, Italy</span>
+                <span class="timeline-dates">Jul. 2023</span>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li>
+                <span class="bullet-title">C# Windows Forms:</span>
+                Built a Windows Forms application in C# to manage a web dashboard.
+              </li>
+              <li>
+                <span class="bullet-title">Industry 4.0:</span>
+                Contributed to document digitalization for Industry 4.0 processes.
+              </li>
+            </ul>
+          </article>
+
+          <!-- GateDev -->
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">GateDev</h3>
+                <div class="timeline-subtitle">
+                  Android Developer Intern
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-location">Montebelluna, Italy</span>
+                <span class="timeline-dates">Jun. 2021</span>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li>
+                <span class="bullet-title">Flutter:</span>
+                Developed Android applications using Flutter and Dart.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section section-projects">
+        <div class="projects-header">
+          <h2 class="section-title">Projects</h2>
+          <a href="/TODO" class="btn-secondary">
+            <span>View all projects</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- PROGRAMMING SKILLS -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Programming Skills</h2>
+
+        <div class="skills-list">
+          <div class="skills-item">
+            <span class="skills-label">Languages</span>
+            <ul>
+              <li>C#</li>
+              <li>Python</li>
+              <li>C++</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+
+          <div class="skills-item">
+            <span class="skills-label">Libraries</span>
+            <ul>
+              <li>scikit-learn</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+              <li>NetworkX</li>
+            </ul>
+          </div>
+
+          <div class="skills-item">
+            <span class="skills-label">Frameworks</span>
+            <ul>
+              <li>.NET</li>
+              <li>React</li>
+              <li>FastAPI</li>
+              <li>TensorFlow</li>
+              <li>PyTorch</li>
+            </ul>
+          </div>
+
+          <div class="skills-item">
+            <span class="skills-label">Data & ML</span>
+            <ul>
+              <li>NLP</li>
+              <li>Regression & classification</li>
+              <li>Time series forecasting</li>
+              <li>Apache Spark</li>
+            </ul>
+          </div>
+
+          <div class="skills-item">
+            <span class="skills-label">Tools</span>
+            <ul>
+              <li>Git, GitHub, GitHub Actions</li>
+              <li>AWS (S3, EC2/ECS)</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="section">
+      <h2 class="section-title">Certifications</h2>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="cert-header-row">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">AI Fundamentals</h3>
+                <div class="timeline-subtitle">
+                  Ca' Foscari University of Venice,  Credential ID XVmqbQS_TteaRLLyqyi60A
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-dates">Mar 2026</span>
+              </div>
+            </div>
+            <div class="cert-actions">
+              <a
+                href="https://bestr.it/award/show/XVmqbQS_TteaRLLyqyi60A"
+                target="_blank"
+                class="btn-tertiary"
+              >
+                <span>Show credential</span>
+              </a>
+            </div>
+          </div>
+          <p class="cert-description">
+            Foundations of modern AI with a focus on generative models (GANs, VAEs) and practical applications.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="cert-header-row">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Next-Generation Intelligent Cellular Systems</h3>
+                <div class="timeline-subtitle">
+                  Ca' Foscari University of Venice, Credential ID BjIOKqdHSgGJx08hwE_wCQ
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-dates">Mar 2026</span>
+              </div>
+            </div>
+            <div class="cert-actions">
+              <a
+                href="https://bestr.it/award/show/BjIOKqdHSgGJx08hwE_wCQ"
+                target="_blank"
+                class="btn-tertiary"
+              >
+                <span>Show credential</span>
+              </a>
+            </div>
+          </div>
+          <p class="cert-description">
+            Intelligent wireless systems with CNN-based signal processing and GPS-aware applications.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="cert-header-row">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">IELTS Academic – Band 7.5 (C1)</h3>
+                <div class="timeline-subtitle">
+                  British Council
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-dates">Nov 2025</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="cert-header-row">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">OCI 2025 Data Science Professional</h3>
+                <div class="timeline-subtitle">
+                  Oracle
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-dates">Oct 2025</span>
+              </div>
+            </div>
+            <div class="cert-actions">
+              <a
+                href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=DBC306CF656EFF935302848F10DBBDEEB8534F4583134890BD85E4D6BF992CE1"
+                target="_blank"
+                class="btn-tertiary"
+              >
+                <span>Show credential</span>
+              </a>
+            </div>
+          </div>
+          <p class="cert-description">
+            End-to-end data science on Oracle Cloud: data preparation, model training, deployment and monitoring.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="cert-header-row">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">OCI 2025 Generative AI Professional</h3>
+                <div class="timeline-subtitle">
+                  Oracle
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-dates">Oct 2025</span>
+              </div>
+            </div>
+            <div class="cert-actions">
+              <a
+                href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=B041E5986EA036DD11617C6E9B9ED9A67C8C5D8094AF40AFD71AF5129E57349B"
+                target="_blank"
+                class="btn-tertiary"
+              >
+                <span>Show credential</span>
+              </a>
+            </div>
+          </div>
+          <p class="cert-description">
+            Design and deployment of generative AI and RAG solutions on Oracle Cloud.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="cert-header-row">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Geospatial Analysis</h3>
+                <div class="timeline-subtitle">
+                  Kaggle
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-dates">Feb 2026</span>
+              </div>
+            </div>
+            <div class="cert-actions">
+              <a
+                href="https://www.kaggle.com/learn/certification/tommasofacchin/geospatial-analysis"
+                target="_blank"
+                class="btn-tertiary"
+              >
+                <span>Show credential</span>
+              </a>
+            </div>
+          </div>
+          <p class="cert-description">
+            Geospatial feature engineering, visualization and modeling using Python.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="cert-header-row">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Cisco Certified Network Associate Security (CCNA)</h3>
+                <div class="timeline-subtitle">
+                  Cisco
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-dates">Jun 2022</span>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
-      
-
-
-</div>
-    <script src="script.js"></script>
+    </main>
   </body>
 </html>
