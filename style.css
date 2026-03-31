@@ -603,6 +603,10 @@ body {
 
 
 /* --- Projects page --- */
+
+.section-projects{
+  margin-top: 0.5rem;
+}
 .section-projects-page {
   display: flex;
   flex-direction: column;
@@ -632,6 +636,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 .projects-controls-top {
@@ -796,3 +801,18 @@ body {
 }
 
 
+
+.back-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    display: inline-flex;     
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.75rem;
+    margin-left: 1rem;
+
+  }
+}
