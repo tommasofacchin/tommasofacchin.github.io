@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Projects – Tommaso Facchin</title>
+
+    <!-- Font + Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <nav class="topbar-nav">
+          <a href="index.html#about" class="topbar-link">About</a>
+          <a href="index.html#education" class="topbar-link">Education</a>
+          <a href="index.html#experience" class="topbar-link">Experience</a>
+          <a href="projects.html" class="topbar-link topbar-link-active"
+            >Projects</a
+          >
+          <a href="index.html#skills" class="topbar-link">Skills</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="app-shell">
+      <!-- Heading -->
+      <section class="section section-projects-page">
+        <header class="projects-page-heading">
+          <h1 class="section-title">Projects</h1>
+        </header>
+
+        <!-- Controls -->
+        <section class="projects-controls" aria-label="Project filters">
+          <div class="projects-controls-top">
+            <div class="projects-count" id="projects-count">
+              Showing 0 projects
+            </div>
+            <button
+              class="btn-tertiary"
+              id="projects-clear-filters"
+              type="button"
+            >
+              <i class="fa-solid fa-xmark"></i>
+              <span>Clear filters</span>
+            </button>
+          </div>
+
+          <div class="projects-filters">
+            <div class="projects-filters-grid">
+                <!-- Languages -->
+                <div class="projects-filters-group">
+                <div class="projects-filters-label">Languages</div>
+                <div class="projects-filters-list">
+                    <button class="tag-pill" data-stack-filter="python">Python</button>
+                    <button class="tag-pill" data-stack-filter="typescript">TypeScript</button>
+                    <button class="tag-pill" data-stack-filter="javascript">JavaScript</button>
+                    <button class="tag-pill" data-stack-filter="java">Java</button>
+                    <button class="tag-pill" data-stack-filter="csharp">C#</button>
+                    <button class="tag-pill" data-stack-filter="cplusplus">C++</button>
+                </div>
+                </div>
+
+                <!-- Libraries -->
+                <div class="projects-filters-group">
+                <div class="projects-filters-label">Libraries</div>
+                <div class="projects-filters-list">
+                    <button class="tag-pill" data-stack-filter="pandas">pandas</button>
+                    <button class="tag-pill" data-stack-filter="scikit-learn">scikit-learn</button>
+                    <button class="tag-pill" data-stack-filter="pytorch">PyTorch</button>
+                    <button class="tag-pill" data-stack-filter="networkx">NetworkX</button>
+                    <button class="tag-pill" data-stack-filter="beautifulsoup">BeautifulSoup</button>
+                </div>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="projects-filters-group">
+                <div class="projects-filters-label">Frameworks & Tools</div>
+                <div class="projects-filters-list">
+                    <button class="tag-pill" data-stack-filter="fastapi">FastAPI</button>
+                    <button class="tag-pill" data-stack-filter="flask">Flask</button>
+                    <button class="tag-pill" data-stack-filter="streamlit">Streamlit</button>
+                    <button class="tag-pill" data-stack-filter="react">React</button>
+                    <button class="tag-pill" data-stack-filter="nextjs">Next.js</button>
+                    <button class="tag-pill" data-stack-filter="unity">Unity</button>
+                    <button class="tag-pill" data-stack-filter="dotnet">.NET</button>
+                    <button class="tag-pill" data-stack-filter="github-actions">GitHub Actions</button>
+                </div>
+                </div>
+
+                <!-- ML & Data -->
+                <div class="projects-filters-group">
+                <div class="projects-filters-label">ML & Data</div>
+                <div class="projects-filters-list">
+                    <button class="tag-pill" data-stack-filter="kaggle">Kaggle</button>
+                    <button class="tag-pill" data-stack-filter="nlp">NLP</button>
+                    <button class="tag-pill" data-stack-filter="llms">LLMs</button>
+                    <button class="tag-pill" data-stack-filter="timeseries">Time series</button>
+                    <button class="tag-pill" data-stack-filter="regression">Regression</button>
+                    <button class="tag-pill" data-stack-filter="computational-intelligence">
+                    Computational intelligence
+                    </button>
+                    <button class="tag-pill" data-stack-filter="social-network-analysis">
+                    Social network analysis
+                    </button>
+                    <button class="tag-pill" data-stack-filter="stable-diffusion">
+                    Stable Diffusion
+                    </button>
+                </div>
+                </div>
+
+                <!-- Infra & Cloud -->
+                <div class="projects-filters-group">
+                <div class="projects-filters-label">Infra & Cloud</div>
+                <div class="projects-filters-list">
+                    <button class="tag-pill" data-stack-filter="aws">AWS</button>
+                    <button class="tag-pill" data-stack-filter="supabase">Supabase</button>
+                    <button class="tag-pill" data-stack-filter="postgresql">PostgreSQL</button>
+                    <button class="tag-pill" data-stack-filter="sql">SQL</button>
+                </div>
+                </div>
+
+                <!-- Other -->
+                <div class="projects-filters-group">
+                <div class="projects-filters-label">Other</div>
+                <div class="projects-filters-list">
+                    <button class="tag-pill" data-stack-filter="latex">LaTeX</button>
+                    <button class="tag-pill" data-stack-filter="notes">Notes</button>
+                    <button class="tag-pill" data-stack-filter="games">Games</button>
+                    <button class="tag-pill" data-stack-filter="vader">VADER</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Projects grid -->
+        <section class="projects-grid" id="projects-grid"></section>
+
+        <p class="projects-empty" id="projects-empty" style="display: none">
+          No projects match the selected stacks. Try removing one of the filters.
+        </p>
+      </section>
+    </main>
+
+    <!-- Projects data + logic -->
+    <script>
+      const projectsData = [
+        {
+          title: "MITx MicroMasters in Statistics and Data Science",
+          metaMain: "May 2026",
+          description: "Personal study repository for the MITx MicroMasters in Statistics and Data Science. Contains concise LaTeX notes and worked exercises for the core courses.",
+          stacks: ["notes", "python", "latex"],
+          github:
+            "https://github.com/tommasofacchin/mitx-micromasters-data-science",
+        },
+        {
+          title: "Machine Learning Notes",
+          metaMain: "Jan 2026",
+          description: "Personal notes on machine learning",
+          stacks: ["notes", "python", "latex", "kaggle"],
+          github: "https://github.com/tommasofacchin/machine-learning-notes",
+        },
+        {
+          title: "Text Summarization Transformer",
+          metaMain: "Nov 2025",
+          description: "Text summarization using a Transformer-based model built from scratch",
+          stacks: ["python", "NLP", "kaggle"],
+          github:
+            "https://github.com/tommasofacchin/text-summarization-transformer",
+        },
+        {
+          title: "drama sync tvmaze",
+          metaMain: "Feb 2026",
+          description: "small Node.js + TypeScript service that syncs K-drama data from the TVMaze API into a PostgreSQL database",
+          stacks: ["typescript", "nodejs", "supabase", "postgresql", "github-actions"],
+          github: "https://github.com/tommasofacchin/drama-sync-tvmaze",
+        },
+        {
+          title: "llisto-supabase-backups",
+          metaMain: "Feb 2026",
+          description: "Automated backup pipeline for my app Llisto. GitHub Actions runs nightly pg_dump on the Supabase Postgres database and stores compressed backups securely on Amazon S3",
+          stacks: ["typescript", "supabase", "AWS", "postgresql", "github-actions"],
+          github: "https://github.com/tommasofacchin/llisto-supabase-backups",
+        },
+        {
+          title: "Smart Pantry – Recipe Recommender",
+          metaMain: "Feb 2026",
+          description: "Smart-Pantry Recipe Recommender: end-to-end ML project using Python, pandas, scikit-learn, with Streamlit for the web app",
+          stacks: ["python", "fastapi", "AWS", "streamlit"],
+          github:
+            "https://github.com/tommasofacchin/smart-pantry-recipe-recommender",
+        },
+        {
+          title: "sql-cleaner",
+          metaMain: "Jan 2026",
+          description: "Simple utility to clean and format SQL queries, making them more readable and consistent. Supports keyword capitalization, indentation, and spacing adjustments.",
+          stacks: ["javascript"],
+          github: "https://github.com/tommasofacchin/sql-cleaner",
+        },
+        {
+          title: "Predictive Analysis 2026",
+          metaMain: "Jan 2026",
+          description: "Personal notes and exercises for my predictive Analysis course at Ca'Foscari University of Venice",
+          stacks: ["notes", "scikit-learn", "pandas", "regression", "timeseries", "latex"],
+          github: "https://github.com/tommasofacchin/predictive-analysis-2026",
+        },
+        {
+          title: "Genetic Algorithm from Scratch",
+          metaMain: "Jan 2026",
+          description: "Small Python project that implements a generic genetic algorithm from scratch and applies it to three examples: bitstring optimization, evolving a target text string, and feature selection for a real machine learning model",
+          stacks: ["python", "kaggle", "computational-intelligence"],
+          github:
+            "https://github.com/tommasofacchin/genetic-algorithm-from-scratch",
+        },
+        {
+          title: "OOP 2026",
+          metaMain: "Jan 2026",
+          description: "Personal study notes and exercises for my Object-oriented programming course at Ca'Foscari University of Venice",
+          stacks: ["java", "cpp", "notes", "latex"],
+          github: "https://github.com/tommasofacchin/OOP-2026",
+        },
+        {
+          title: "Makgeolli Fermentation Notes",
+          metaMain: "Jan 2026",
+          description: "LaTeX report on the microbiology, biochemistry, and technology of makgeolli fermentation, with a focus on traditional nuruk, starter cultures, and environmental factors affecting microbial growth",
+          stacks: ["Latex"],
+          github:
+            "https://github.com/tommasofacchin/makgeolli-fermentation-notes",
+        },
+        {
+          title: "polytype trainer",
+          metaMain: "Jan 2026",
+          description: "Polytype Trainer is a lightweight browser app built with plain HTML, CSS and vanilla JavaScript, using Python + BeautifulSoup scripts to scrape and clean vocabulary lists before exporting them as JS decks",
+          stacks: ["beautifulsoup", "javascript"],
+          github: "https://github.com/tommasofacchin/polytype-trainer",
+        },
+        {
+          title: "secret santa mail sender",
+          metaMain: "Dec 2025",
+          description: "Secret Santa email sender built with Streamlit and Python. Generate random valid pairings and send personalized Brevo transactional emails to all participants in one click",
+          stacks: ["python", "streamlit"],
+          github:
+            "https://github.com/tommasofacchin/secret-santa-mail-sender",
+        },
+        {
+          title: "christmas story generator",
+          metaMain: "Dec 2025",
+          description: "Streamlit web app built for the Datapizza AI Christmas Challenge. It uses a Groq‑backed Datapizza client for text generation, PyTorch + diffusers (SDXL) for images",
+          stacks: ["python", "pytorch", "streamlit", "LLMs"],
+          github:
+            "https://github.com/tommasofacchin/christmas-story-generator",
+        },
+        {
+          title: "job fit index",
+          metaMain: "Dec 2025",
+          description: "JobFitIndex is an AI-native anti-portfolio built with Python, Streamlit, SQLite and OpenRouter LLMs. Developed in a 48-hour Cosmico hackathon, it’s a working prototype for AI-guided interviews, scoring and Markdown anti-portfolio generation",
+          stacks: ["python", "sql", "streamlit", "LLMs"],
+          github: "https://github.com/tommasofacchin/job-fit-index",
+        },
+        {
+          title: "ft tokenize",
+          metaMain: "Dec 2025",
+          description: "Small C++ tokenizer with support for word-level and BPE tokenization, featuring a Python API for training, encoding, and decoding text",
+          stacks: ["cpp", "python", "NLP"],
+          github: "https://github.com/tommasofacchin/ft-tokenize",
+        },
+        {
+          title: "SoulHunter",
+          metaMain: "2024",
+          description: "A top-down shooter developed in Unity using C#",
+          stacks: ["unity", "c#", "games"],
+          github:
+            "https://github.com/tommasofacchin/SoulHunter-Unity-Game",
+        },
+        {
+          title: "TikTok-ban social network analysis",
+          metaMain: "May 2025",
+          description: "analyzed user discussions on Reddit around the TikTok ban and the growing interest in Xiaohongshu. Collected data using Reddit API, built users interaction graphs, community detection, sentiment analysis using NLP",
+          stacks: ["python", "NLP", "networkx", "social-network-analysis", "vader", "kaggle"],
+          github:
+            "https://github.com/tommasofacchin/TikTok-ban-social-network-analysis",
+        },
+        {
+          title: "data and web mining project",
+          metaMain: "Jun 2025",
+          description: "Project on data processing and predictive modeling. Cleaned and explored a dataset, then developed two predictive models (Random forest and XGBoost) to analyze patterns and forecast outcomes. Built using Python, pandas, scikit-learn, and data visualization tools",
+          stacks: ["python", "kaggle", "scikit-learn"],
+          github:
+            "https://github.com/tommasofacchin/data-web-mining-project",
+        },
+        {
+          title: "genesa report creator",
+          metaMain: "Mar 2025",
+          description: "Small program i created using c# .NET for my mum, she can create order confirmation reports for her sales, and automatically send it to her clients via mail(SMTP client)",
+          stacks: ["dotnet", "c#"],
+          github:
+            "https://github.com/tommasofacchin/genesa-report-creator",
+        },
+        {
+          title: "University Project SQL Python",
+          metaMain: "Oct 2024",
+          description: "E-commerce application with Python and SQL, an university project i made for my database management exam",
+          stacks: ["python", "sql", "flask"],
+          github:
+            "https://github.com/tommasofacchin/University-Project-SQL-Python",
+        },
+        {
+          title: "Markov-Wave-Function-Collapse",
+          metaMain: "Sep 2024",
+          description: "Generating Procedural Tilemaps with Wave Function Collapse and Markov Chains",
+          stacks: ["c#", "unity"],
+          github:
+            "https://github.com/tommasofacchin/Markov-Wave-Function-Collapse",
+        },
+        {
+          title: "dynamic ant colony optimization (ACO)",
+          metaMain: "Sep 2025",
+          description: "Dynamic Ant Colony Optimization (ACO) simulation built in Unity Game Engine. Adaptable environment with walls, paths, and food sources for real-time optimization",
+          stacks: ["unity", "c#", "computational-intelligence"],
+          github:
+            "https://github.com/tommasofacchin/dynamic-ant-colony-optimization",
+        },
+        {
+          title: "vercel-storj upload",
+          metaMain: "May 2025",
+          description: "backend API for uploading images to Storj, a storage service. The application is built using Next.js and integrates with Storj, a decentralized cloud storage platform, for storing images",
+          stacks: ["typescript", "react"],
+          github:
+            "https://github.com/tommasofacchin/vercel-storj-upload",
+        },
+        {
+          title: "SeaGuard",
+          metaMain: "Dec 2024",
+          description: "University project for Software Engineering course. ",
+          stacks: ["Java"],
+          github: "https://github.com/tommasofacchin/SeaGuard",
+        },
+      ];
+
+      const projectsGrid = document.getElementById("projects-grid");
+
+      function createProjectCard(p) {
+        const article = document.createElement("article");
+        article.className = "project-card";
+        article.dataset.stacks = p.stacks.join(",");
+
+        const stacksHtml = p.stacks
+          .map(
+            (s) =>
+              `<span class="tag-pill-stack" data-stack="${s}">${s}</span>`
+          )
+          .join("");
+
+        article.innerHTML = `
+          <div class="project-header">
+            <div class="project-title-row">
+              <h2 class="project-title">${p.title}</h2>
+              <span class="project-meta">${p.metaMain}</span>
+            </div>
+          </div>
+          <p class="project-description">
+            ${p.description}
+          </p>
+          <div class="project-footer">
+            <div class="project-stacks">
+              ${stacksHtml}
+            </div>
+            <div class="project-actions">
+              ${
+                p.github
+                  ? `<a href="${p.github}" target="_blank" class="btn-tertiary">
+                       <i class="fa-brands fa-github"></i>
+                       <span>View code</span>
+                     </a>`
+                  : ""
+              }
+            </div>
+          </div>
+        `;
+        return article;
+      }
+
+      projectsData.sort((a, b) => {
+        const dateA = parseMetaDate(a.metaMain);
+        const dateB = parseMetaDate(b.metaMain);
+
+        if (!dateA && !dateB) return 0;
+        if (!dateA) return 1;   
+        if (!dateB) return -1;
+
+        return dateB - dateA;  
+        });
+
+        projectsData.forEach((p) => {
+        projectsGrid.appendChild(createProjectCard(p));
+        });
+
+      const filterButtons = document.querySelectorAll("[data-stack-filter]");
+      const projectCards = document.querySelectorAll(".project-card");
+      const activeStacks = new Set();
+      const countEl = document.getElementById("projects-count");
+      const emptyEl = document.getElementById("projects-empty");
+      const clearBtn = document.getElementById("projects-clear-filters");
+
+      function updateFiltersUI() {
+        filterButtons.forEach((btn) => {
+          const stack = btn.dataset.stackFilter;
+          if (activeStacks.has(stack)) {
+            btn.classList.add("tag-pill-active");
+          } else {
+            btn.classList.remove("tag-pill-active");
+          }
+        });
+
+        document.querySelectorAll(".tag-pill-stack").forEach((pill) => {
+          const stack = pill.dataset.stack;
+          pill.dataset.stackHighlight = activeStacks.has(stack)
+            ? "true"
+            : "false";
+        });
+      }
+
+      function parseMetaDate(metaMain) {
+        if (!metaMain) return null;
+
+        const parts = metaMain.split(" ");
+        if (parts.length >= 2) {
+            const monthName = parts[0].toLowerCase();
+            const year = parseInt(parts[1], 10);
+            if (!year) return null;
+
+            const monthMap = {
+            jan: 0, 
+            feb: 1, 
+            mar: 2, 
+            apr: 3, 
+            may: 4,
+            jun: 5, 
+            jul: 6, 
+            aug: 7, 
+            sep: 8, 
+            oct: 9, 
+            nov: 10, 
+            dec: 11,
+            };
+
+            const monthKey =
+            monthName.slice(0, 3) in monthMap ? monthName.slice(0, 3) : monthName;
+            const month = monthMap[monthKey];
+            if (month === undefined) return new Date(year, 0, 1); 
+
+            return new Date(year, month, 1);
+        }
+
+        const yearOnly = parseInt(metaMain, 10);
+        if (yearOnly) return new Date(yearOnly, 0, 1);
+
+        return null;
+        }
+
+      function updateCountAndEmpty() {
+        const visible = [...projectCards].filter(
+          (card) => card.style.display !== "none"
+        ).length;
+        const total = projectCards.length;
+        countEl.textContent =
+          activeStacks.size === 0
+            ? `Showing ${total} projects`
+            : `Showing ${visible} of ${total} projects`;
+        emptyEl.style.display = visible === 0 ? "block" : "none";
+      }
+
+      function filterProjects() {
+        if (activeStacks.size === 0) {
+          projectCards.forEach((card) => {
+            card.style.display = "";
+          });
+          updateCountAndEmpty();
+          return;
+        }
+
+        projectCards.forEach((card) => {
+          const stacks = (card.dataset.stacks || "")
+            .split(",")
+            .map((s) => s.trim())
+            .filter(Boolean);
+
+          const matches = [...activeStacks].some((s) => stacks.includes(s));
+          card.style.display = matches ? "" : "none";
+        });
+
+        updateCountAndEmpty();
+      }
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const stack = btn.dataset.stackFilter;
+          if (activeStacks.has(stack)) {
+            activeStacks.delete(stack);
+          } else {
+            activeStacks.add(stack);
+          }
+          updateFiltersUI();
+          filterProjects();
+        });
+      });
+
+      clearBtn.addEventListener("click", () => {
+        activeStacks.clear();
+        updateFiltersUI();
+        filterProjects();
+      });
+      
+
+      updateFiltersUI();
+      updateCountAndEmpty();
+    </script>
+  </body>
+</html>
