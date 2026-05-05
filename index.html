@@ -225,7 +225,7 @@
             <ul class="bullet-list">
               <li>
                 <span class="bullet-title">Full-stack development:</span>
-                Built a mobile-first website builder for small businesses using React Native and React/Next.js.
+                Built a website builder for small businesses using React Native and React/Next.js.
               </li>
               <li>
                 <span class="bullet-title">Cloud infrastructure:</span>
@@ -233,11 +233,7 @@
               </li>
               <li>
                 <span class="bullet-title">AI assistant and personalization:</span>
-                Built and deployed a self-hosted AI assistant for product descriptions using Ollama and vLLM, and implemented a RAG pipeline with pgvector to generate personalized suggestions based on each user's existing catalog.
-              </li>
-              <li>
-                <span class="bullet-title">Analytics and forecasting:</span>
-                Implemented analytics and time-series forecasting pipelines using Python, ARIMA models, and Apache Airflow to generate daily traffic forecasts and category-level visit predictions.
+                Built and deployed an AI assistant for product descriptions using Supabase edge functions calling an LLM API, and designed a hybrid search RAG pipeline with pgvector to generate personalized suggestions based on each user's existing catalog.
               </li>
             </ul>
           </article>
@@ -248,7 +244,7 @@
               <div>
                 <h3 class="timeline-title">Isoft Srl</h3>
                 <div class="timeline-subtitle">
-                  Software/Data Engineer
+                  Data Engineer
                 </div>
               </div>
               <div class="timeline-meta">
@@ -260,19 +256,31 @@
             <ul class="bullet-list">
               <li>
                 <span class="bullet-title">ERP backend development:</span>
-                Working on an ERP system for jewelry manufacturing, maintaining and
-                extending core modules in VB.NET and C#, using REST APIs and
-                microservices.
+                Developed and maintained data-intensive ERP modules for jewelry manufacturing, working with VB.NET and C\#, and integrating REST APIs and microservices.
               </li>
               <li>
                 <span class="bullet-title">Database optimization:</span>
-                Managing and optimizing SQL Server databases (T-SQL, indexing,
-                query tuning), designing relational schemas and ETL jobs.
+                Designed and optimized SQL Server databases (T-SQL), including indexing strategies, query tuning, and relational schema design for high-performance data access.
               </li>
               <li>
-                <span class="bullet-title">Automation and APIs:</span>
-                Building Python automation scripts and REST APIs in C# .NET for
-                third-party integrations, reporting, and data pipelines.
+                <span class="bullet-title">ETL & Data integration:</span>
+                Built ETL processes and Python automation scripts to extract, transform, and load data across systems, enabling reporting and third-party integrations via REST APIs.
+              </li>
+              <li>
+                <span class="bullet-title">AI-powered ERP assistant:</span>
+                Implemented an AI layer for the ERP including a RAG knowledge base for ERP manuals, semantic search over embedded document chunks, a centralized OpenAI integration layer, in-memory cached AI configuration, and a Text-to-SQL service.
+              </li>
+              <li>
+                <span class="bullet-title">Audit logging & recovery:</span>
+                Built a trigger-based audit trail for SQL Server ERP tables that logs all updates and deletions into dedicated logging databases (with automatic rollover to additional log DBs when full), and developed a restore utility to recover deleted records from the audit logs.
+              </li>
+              <li>
+                <span class="bullet-title">Forecasting & analytics:</span>
+                Designed a forecasting system to support material requirement planning (MRP).
+              </li>
+              <li>
+                <span class="bullet-title">Data sync & API staging:</span>
+                Implemented an automated ETL pipeline to synchronize data between two ERP databases (incremental extraction, transformation and scheduled loading) and designed a metadata-driven JSON staging and diff engine in SQL Server that validates API payloads, auto-maps fields into entity-specific staging tables, computes field-level diffs with rules, and applies atomic upserts from staging to production tables.
               </li>
             </ul>
           </article>
