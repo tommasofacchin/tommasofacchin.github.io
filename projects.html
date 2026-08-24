@@ -110,6 +110,8 @@
                     <button class="tag-pill" data-stack-filter="unity">Unity</button>
                     <button class="tag-pill" data-stack-filter="dotnet">.NET</button>
                     <button class="tag-pill" data-stack-filter="github-actions">GitHub Actions</button>
+                    <button class="tag-pill" data-stack-filter="firebase">Firebase</button>
+                    <button class="tag-pill" data-stack-filter="nodejs">nodejs</button>
                 </div>
                 </div>
 
@@ -172,6 +174,30 @@
     <!-- Projects data + logic -->
     <script>
       const projectsData = [
+        {
+          title: "AIDC Power Supply Resilience",
+          metaMain: "Aug 2026",
+          description:
+            "County-level power-outage forecasting system developed for Huawei Tech Arena 2026. It predicts the electricity-outage ratio across US counties using archived ECMWF IFS HRES forecasts, EAGLE-I outage data, causal feature engineering, LightGBM, and a lead-dependent persistence blend. The project includes an end-to-end reproducible pipeline, validation checks, and submission packaging.",
+          stacks: ["python", "pandas", "scikit-learn", "timeseries", "aws", "github-actions"],
+          github:
+            "https://github.com/tommasofacchin/aidc-power-resilience",
+        },
+        {
+          title: "polytype trainer",
+          metaMain: "Aug 2026",
+          description: "Gamified language-learning platform with vocabulary decks, grammar lessons, flashcard practice, sprint, memory and dictation drills, streaks, a virtual coin shop, and social features. Built with vanilla JavaScript and Vercel serverless functions, using Firebase Auth and Firestore for accounts and progress, plus Storj for hosted audio and profile images.",
+          stacks: ["javascript", "firebase", "vercel", "nodejs", "sql", "typescript"],
+          github: "https://github.com/tommasofacchin/polytype-trainer",
+        },
+        {
+          title: "Spinout Engine",
+          metaMain: "jun 2026",
+          description:
+            "AI-powered platform that turns technical research papers, decks, and notes into venture-ready memos. It identifies technical novelty, market wedges, risks, competitors, and investor questions through a multi-agent workflow, with Firebase-based accounts, feature gating, and S3-backed document and audio storage.",
+          stacks: ["python", "fastapi", "react", "typescript", "firebase", "aws", "postgresql", "LLMs", "github-actions"],
+          github: "https://github.com/tommasofacchin/spinout-engine",
+        },
         {
           title: "MITx MicroMasters in Statistics and Data Science",
           metaMain: "May 2026",
@@ -253,13 +279,6 @@
           stacks: ["Latex"],
           github:
             "https://github.com/tommasofacchin/makgeolli-fermentation-notes",
-        },
-        {
-          title: "polytype trainer",
-          metaMain: "Jan 2026",
-          description: "Polytype Trainer is a lightweight browser app built with plain HTML, CSS and vanilla JavaScript, using Python + BeautifulSoup scripts to scrape and clean vocabulary lists before exporting them as JS decks",
-          stacks: ["beautifulsoup", "javascript"],
-          github: "https://github.com/tommasofacchin/polytype-trainer",
         },
         {
           title: "secret santa mail sender",
